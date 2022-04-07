@@ -1,0 +1,1736 @@
+6f703ade639d7d2c9a4152e748ad5696595f5226*Fri Jan 4 22:58:46 2019 +0100*3 years, 3 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+302622e6590fbb9b35d5ecc97330dd2f5a41b8df*Wed Dec 26 17:44:44 2018 +0100*3 years, 3 months ago
+b2d7805fc6f39afbf12dd0686f4ad48f07b9b070*Sun Dec 2 17:22:04 2018 +0100*3 years, 4 months ago
+ doc/scenarios.md | 17 ++++++-----------
+ 1 file changed, 6 insertions(+), 11 deletions(-)
+
+a6965083cef5e75102a815cfd7b6f81028ec80a7*Wed May 9 14:54:28 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+05681455d905586f940e0e00ed05f34266332ae9*Mon Apr 30 22:13:06 2018 +0200*3 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+51f041d65782a61449b01270d001c7d1d4ccf6f6*Mon Apr 30 22:10:37 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+9b0a3036c66be4da106b7776560b3f612abce728*Mon Apr 30 22:10:37 2018 +0200*3 years, 11 months ago
+ pom.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+794e27945b97d9aed2e167083e4545e9adad3aaa*Mon Apr 30 21:37:02 2018 +0200*3 years, 11 months ago
+ README.md | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+266a352728c7417fedd2e87c621aa146ae7c388b*Mon Apr 30 21:29:12 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ee117274f26b8928fae0b00a5fae7f97135b7c24*Mon Apr 30 21:23:35 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 20 --------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java                |  1 -
+ 2 files changed, 21 deletions(-)
+
+577165e69c259281b9cffd26467ff5fe1cb6e486*Mon Apr 30 21:22:22 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/board/Unit.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+933c58de5cea1feb813c4947c6297e6f332df2b4*Mon Apr 30 21:17:10 2018 +0200*3 years, 11 months ago
+ pom.xml                                                    |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java      | 20 +++++++++++++++++---
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 27 ++++++++++++++++++++++++++-
+ 3 files changed, 44 insertions(+), 5 deletions(-)
+
+2434427914fa957f65617a9e794510f0c6ada9f9*Tue Apr 24 14:42:48 2018 +0200*3 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+01b27f3b5df8852be3bf2f6fffec899a941ffd7b*Tue Apr 24 14:41:00 2018 +0200*3 years, 11 months ago
+c0751a4d1da877175defd6fa7b93378c8288c640*Tue Apr 24 13:56:55 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+482e82ba5c99d0b3e5de4752d6ddff7993a219cd*Tue Apr 24 13:49:23 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java | 8 ++++----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java  | 6 ++----
+ 2 files changed, 6 insertions(+), 8 deletions(-)
+
+52e1078ced68c35ff408ec953a02ff7f57d76ac3*Tue Apr 24 13:42:25 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java      | 34 ++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java       | 46 +++++++++++++++++++---------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java |  3 +++
+ 3 files changed, 36 insertions(+), 47 deletions(-)
+
+9cc5e882821f39a42550ed3cbf282b2ecc1bcde0*Mon Apr 23 10:21:25 2018 +0200*3 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+4d58bd38f3eb2737b8fdc2d7bea01bb3657ac233*Sun Apr 22 22:46:51 2018 +0200*4 years ago
+721c653873066f291e128c0f48a562e5029f2635*Sun Apr 22 22:28:12 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/board/Unit.java      | 15 +++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java  | 50 ++++++++++++++++++++++++--------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java |  7 +------
+ 3 files changed, 40 insertions(+), 32 deletions(-)
+
+9dd4eb98b2166edd02bc7f4e1555e8dc32d1ec63*Sun Apr 22 20:59:50 2018 +0200*4 years ago
+a2674dbe2e9c11199295e6b5e375ab21bfa44b39*Sun Apr 22 20:59:17 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java                       | 16 ++++++++--------
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                |  7 +++----
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java                   | 12 ++++++------
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java            |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/{NPC.java => Ghost.java}           | 47 +++++++++++++++++++++++++++++++++++++++++------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java                  |  1 +
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java                   |  1 +
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java                   | 57 ---------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java            |  1 +
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                    |  1 +
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java                   |  1 +
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java                   |  4 ++--
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java          |  1 +
+ 14 files changed, 68 insertions(+), 85 deletions(-)
+
+70c0f319fdad09339a099240c6021905aeb674ba*Sun Apr 22 20:19:16 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java         | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java | 2 --
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java  | 2 --
+ 3 files changed, 1 insertion(+), 5 deletions(-)
+
+30c05aa5eb3dc64697fa83bc1c21d4cdf3927b11*Sun Apr 22 20:09:01 2018 +0200*4 years ago
+fb70881a2ff293e927bb3c72831a08d8589c4bd5*Sun Apr 22 18:41:51 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java |  5 +++--
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java            | 45 +++++++++++++++++++++++++++++++++++++++++----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java   |  9 +++++----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java    | 18 +++++++++---------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java    | 22 ----------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java     | 15 +++++++++------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java    |  9 +++++----
+ 7 files changed, 72 insertions(+), 51 deletions(-)
+
+81b32973856076076ce53cceddca4f7e582682b7*Sun Apr 22 16:05:54 2018 +0200*4 years ago
+ pom.xml | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+97152cf219040dbc40c37989ff38662f551bb447*Sat Apr 21 16:26:28 2018 +0200*4 years ago
+78c844eb6debdbd5e7e52c8d07b86bbfd3edefc4*Sat Apr 21 15:58:31 2018 +0200*4 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+f0e922ffda15921da1a3b2a40db664dcb538e7de*Sat Apr 21 15:42:53 2018 +0200*4 years ago
+ pom.xml | 4 ----
+ 1 file changed, 4 deletions(-)
+
+621f3dc817a6bcd4162d6259b24864a38e50a3e7*Sat Apr 21 15:34:44 2018 +0200*4 years ago
+ src/test/java/nl/tudelft/jpacman/integration/StartupSystemTest.java | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+
+6d236db64cb7ea3f64716d929bf28785b80d1d3b*Sat Apr 21 15:31:47 2018 +0200*4 years ago
+ pom.xml                                               | 6 ++++++
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 2 +-
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+
+5b02194c90459191bdf7171def7745d5c529d3d8*Sat Apr 21 14:32:12 2018 +0200*4 years ago
+b0cb85ddd5e6d749ea6a974b68e03e5d492a59c0*Sat Apr 21 14:31:53 2018 +0200*4 years ago
+27d8bb96770adf99a79b51bf6c1f443968719ce9*Sat Apr 21 14:31:36 2018 +0200*4 years ago
+d42ee634552d7c3d5254ca81dcc8aa7815c1652d*Sat Apr 21 14:30:50 2018 +0200*4 years ago
+fabf836e6fed0009ef86086a722f90a07d1da970*Sat Apr 21 14:26:23 2018 +0200*4 years ago
+ pom.xml                                               | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 5 ++++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+81e055c78a26610086dd8d7191d736ae6566f8dd*Sat Apr 21 14:04:09 2018 +0200*4 years ago
+ .gitlab-ci.yml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+9a4dd1d1c077ac0a3d71dd302890f45292f80395*Sat Apr 21 13:57:06 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java | 1 -
+ 1 file changed, 1 deletion(-)
+
+1d5581f9ca153e59e2a7001b0ecae040fe810a22*Sat Apr 21 12:14:44 2018 +0200*4 years ago
+ .gitlab-ci.yml |  8 ++++----
+ pom.xml        | 16 +++++++---------
+ 2 files changed, 11 insertions(+), 13 deletions(-)
+
+ac1c4da2d446017f224a538d370b18997373fce6*Sat Apr 21 11:07:34 2018 +0200*4 years ago
+ pom.xml                                                             | 88 ----------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/Launcher.java                      | 10 ++--------
+ src/main/java/nl/tudelft/jpacman/board/Board.java                   |  3 +--
+ src/main/java/nl/tudelft/jpacman/board/Square.java                  |  5 +----
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                    |  3 +--
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java |  4 +---
+ src/main/java/nl/tudelft/jpacman/level/Level.java                   |  5 ++---
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java            |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java                       |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java              |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java               |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java               |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java          | 21 ++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java               |  3 +--
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                   |  3 +--
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java            |  3 +--
+ 17 files changed, 27 insertions(+), 139 deletions(-)
+
+bfff088a5ffb051787d0812985c6542ad58b9bc5*Sat Apr 21 10:48:06 2018 +0200*4 years ago
+ src/test/java/nl/tudelft/jpacman/integration/StartupSystemTest.java | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+fe82746d41ad211c2df716845adba866e92972ca*Sat Apr 21 10:47:52 2018 +0200*4 years ago
+ doc/scenarios.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+f74fcbde462e6c9496ae42ec2fce6937941c2429*Sat Apr 21 01:32:22 2018 +0200*4 years ago
+ .gitlab-ci.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+6344344c72745ea00973c3972507bfeb1cdb37cd*Sat Apr 21 01:02:09 2018 +0200*4 years ago
+ .gitlab-ci.yml | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+2f94279819a78071c579da517359eb9b421f0275*Wed Apr 11 08:43:23 2018 +0200*4 years ago
+abe1128796cbaedf121be9407559863684225a5e*Wed Apr 11 08:37:37 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+f3178b849171907aa7c8d7648689a309c69fe1ee*Mon Apr 9 11:58:29 2018 +0200*4 years ago
+ pom.xml | 10 +++-------
+ 1 file changed, 3 insertions(+), 7 deletions(-)
+
+c632f7819da88350e5912fb6fda1617f6635952a*Mon Apr 9 11:34:39 2018 +0200*4 years ago
+ pom.xml | 34 ++++++++++++++++++++++++++++------
+ 1 file changed, 28 insertions(+), 6 deletions(-)
+
+7791f47462481ae78689db98b9b3033349a6b92b*Sun Apr 8 20:47:39 2018 +0200*4 years ago
+ pom.xml | 27 +++++++++++++++------------
+ 1 file changed, 15 insertions(+), 12 deletions(-)
+
+52b5d31e02800fedd0761962461879a261825e03*Sun Apr 8 20:47:39 2018 +0200*4 years ago
+ src/main/java/nl/tudelft/jpacman/board/Unit.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+e2f78c3e563ae0fb7b370d8dc0139bfcf3589ece*Sun Apr 8 20:47:39 2018 +0200*4 years ago
+ checkstyle.xml                                       | 3 ---
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java | 4 +---
+ 2 files changed, 1 insertion(+), 6 deletions(-)
+
+930b02a9dc6d2d5c9d5718762c861f46cbcec932*Sun Apr 8 20:47:38 2018 +0200*4 years ago
+ pmd-rules.xml                                     | 15 ++++++++++++---
+ pom.xml                                           |  1 +
+ src/main/java/nl/tudelft/jpacman/board/Board.java |  2 +-
+ 3 files changed, 14 insertions(+), 4 deletions(-)
+
+5185208eb89fb4b4ae0347ae0ea57bdeaef817fd*Sun Apr 8 20:47:07 2018 +0200*4 years ago
+ pom.xml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+be5cb0992b4bbbd3b68deee00fb4c4de93cd0d6f*Wed Apr 4 17:15:28 2018 +0200*4 years ago
+ .travis.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+6894f594cc5bfaafce3efdd49e5794ce7100b129*Wed Apr 4 15:12:09 2018 +0200*4 years ago
+ pom.xml | 97 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------
+ 1 file changed, 76 insertions(+), 21 deletions(-)
+
+6f135e835d6a97c0ae0ccf99af92b9e5557c0d7e*Tue Apr 3 15:02:43 2018 +0200*4 years ago
+ pom.xml | 4 ----
+ 1 file changed, 4 deletions(-)
+
+f6db83828aacb88120314f4382d4b2de7374f59a*Tue Apr 3 14:50:31 2018 +0200*4 years ago
+ pom.xml | 38 +++++++++++++++++++-------------------
+ 1 file changed, 19 insertions(+), 19 deletions(-)
+
+363c9827a5c7322ff385c74e17a2169071353d83*Fri Mar 23 12:31:20 2018 +0100*4 years ago
+6fcb81aec0e7a63506d7bf1a9f22641246b62c06*Mon Apr 24 22:47:35 2017 +0200*4 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+b16b5531ff998e6d110f1f01887134860f8f366f*Mon Apr 24 22:40:47 2017 +0200*4 years, 11 months ago
+6980da986aa559db9774ca80896d51a2a651f7b2*Mon Apr 24 22:21:19 2017 +0200*4 years, 11 months ago
+ .editorconfig | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+dacbc1d20defd5c2256a38a306a1b7d1fd49fc30*Mon Apr 24 22:15:01 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+b029f50cbff69b8fa465866cd2a54b9baa1599a7*Mon Apr 24 22:07:15 2017 +0200*4 years, 11 months ago
+ checkstyle.xml                                                           |   2 +-
+ src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java       |  36 +++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/board/Board.java                        | 164 +++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java                 | 260 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Direction.java                    | 112 ++++++++++++++++++++++++++++++++++----------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Square.java                       | 222 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                         | 194 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/game/Game.java                          | 160 ++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/game/GameFactory.java                   |  64 +++++++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java              |  74 ++++++++++++++++++++++-----------------------
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java      | 468 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/level/CollisionMap.java                 |  34 ++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java  |  50 +++++++++++++++----------------
+ src/main/java/nl/tudelft/jpacman/level/Level.java                        | 694 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                 | 238 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java                    |  12 ++++----
+ src/main/java/nl/tudelft/jpacman/level/Pellet.java                       |  66 ++++++++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/level/Player.java                       | 160 ++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java             | 100 ++++++++++++++++++++++++++++++-------------------------------
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java                |  60 ++++++++++++++++++-------------------
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java                            |  34 ++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java                   | 104 +++++++++++++++++++++++++++++++--------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java                    | 140 ++++++++++++++++++++++++++++++++++++++++++-------------------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java                    | 114 ++++++++++++++++++++++++++++++++++-----------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostColor.java               |  34 ++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java             |  98 ++++++++++++++++++++++++++++++------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                     | 164 +++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java               | 380 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java                    | 108 +++++++++++++++++++++++++++++++++---------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/package-info.java             |   4 +--
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java              | 300 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java                 |  34 ++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java                 | 114 ++++++++++++++++++++++++++++++++++-----------------------------------
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java               | 268 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/sprite/Sprite.java                      |  86 ++++++++++++++++++++++++++--------------------------
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java                 | 154 ++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------
+ src/main/java/nl/tudelft/jpacman/ui/Action.java                          |  12 ++++----
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java                      | 202 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java                     |  46 ++++++++++++++--------------
+ src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java                  |  66 ++++++++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                        | 173 +++++++++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java                 | 286 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java                      | 152 ++++++++++++++++++++++++++++++++++++++++++++++----------------------------------------------
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java                  |  50 +++++++++++++++----------------
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java                  |  32 ++++++++++----------
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java                    |  24 +++++++--------
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java             | 138 ++++++++++++++++++++++++++++++++++++++++++------------------------------------------
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java                    |   6 ++--
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java                 |  86 ++++++++++++++++++++++++++--------------------------
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java                   |  86 ++++++++++++++++++++++++++--------------------------
+ src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupSteps.java |  82 +++++++++++++++++++++++++-------------------------
+ src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupTest.java  |  14 ++++-----
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java                    | 264 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------------------------------------------------------------------------------
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java           | 246 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------------------
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java                  | 134 ++++++++++++++++++++++++++++++++++++++++-----------------------------------------
+ 55 files changed, 3702 insertions(+), 3703 deletions(-)
+
+9c4808c9a7128340fd5b0de044c204c0c26711a1*Mon Apr 24 21:38:56 2017 +0200*4 years, 11 months ago
+ .editorconfig | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+5318b7c8e810e91e3ca5b1a6cca528016b44a95c*Mon Apr 24 21:38:56 2017 +0200*4 years, 11 months ago
+ checkstyle.xml | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+853e437264c817e503bf42decb1ee771a666d5c0*Mon Apr 24 21:34:49 2017 +0200*4 years, 11 months ago
+b8a5fc4f558b28291857f0a22951864ecb675838*Mon Apr 24 14:59:59 2017 +0200*4 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+12dfd0e46eee5160cf043955f91e229e2965f796*Mon Apr 24 14:53:29 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java        | 13 ++++---------
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 19 +++++++++++++++++++
+ 2 files changed, 23 insertions(+), 9 deletions(-)
+
+0335b58719e43528d469e1c25651f99d6d091527*Mon Apr 24 14:53:29 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 362 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1 file changed, 181 insertions(+), 181 deletions(-)
+
+9db03a091aad503e14437d240ad12fd688353374*Mon Apr 24 14:53:29 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+cd3315151565acbfa6b722671aa17c2cd819c8ee*Mon Apr 24 14:53:29 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 360 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 1 file changed, 180 insertions(+), 180 deletions(-)
+
+0c2ec13837309be32e288df53c0bd734dc78de52*Mon Apr 24 14:52:57 2017 +0200*4 years, 11 months ago
+e773e3ef62fee4d5bb7adaf943155c14783b27c5*Mon Apr 24 10:06:47 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 1 -
+ 1 file changed, 1 deletion(-)
+
+d257f4bfac8be91e92bc71e20241ed5e07894e44*Mon Apr 24 09:58:01 2017 +0200*4 years, 11 months ago
+ pom.xml                                               |  8 ++++++--
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java | 40 +++++++++++++---------------------------
+ 2 files changed, 19 insertions(+), 29 deletions(-)
+
+8329470c1567f728bb598485c4a630442dcd6a9e*Mon Apr 24 09:48:51 2017 +0200*4 years, 11 months ago
+a9f5f65b518694167c67488596b508a60d4be220*Mon Apr 24 00:01:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+3a051551fb94ba1f7c9d05e4d18e59d7ef673991*Mon Apr 24 00:01:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java | 2 --
+ 1 file changed, 2 deletions(-)
+
+9336290ff4ad518ffd94755e38cdce5029994497*Mon Apr 24 00:01:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+2d15bdc2c0692da6c0c84c99cc7856a4d085118d*Mon Apr 24 00:01:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/board/Direction.java               | 12 ++++++------
+ src/main/java/nl/tudelft/jpacman/game/Game.java                     |  3 +--
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java         | 16 ++++++++--------
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 25 ++++++++-----------------
+ src/main/java/nl/tudelft/jpacman/level/Level.java                   | 65 +++++++++++++++++++++++++++++++++--------------------------------
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java           |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java              |  3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java               | 12 +++++-------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java               |  6 +++---
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java          | 51 +++++++++++++++++++++++++--------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java               |  3 +--
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java         |  7 +++----
+ src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java            |  2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java            |  4 ++--
+ src/main/java/nl/tudelft/jpacman/sprite/Sprite.java                 |  4 ++--
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java            |  3 +--
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java                 | 22 +++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java             | 10 +++++-----
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                   |  8 ++++----
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java            |  6 +++---
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java                 | 22 +++++++++++-----------
+ 21 files changed, 135 insertions(+), 152 deletions(-)
+
+aaff5cca54a894148a28fbb6bae236ad38b81026*Mon Apr 24 00:00:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/game/GameFactory.java | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+9d0a4d4f47cddeb97f4fff80576400685b9f1dcd*Mon Apr 24 00:00:00 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+216f970e020dd14ae324b75c0b0fbb684f37aafe*Sun Apr 23 23:19:16 2017 +0200*4 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+5bda10e8c21441830b153358dc9c85a7217368cc*Sun Apr 23 23:16:05 2017 +0200*4 years, 11 months ago
+f8227a125ed3731d347610004208e833dcd57592*Sun Apr 23 22:48:36 2017 +0200*4 years, 11 months ago
+ pmd-rules.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+75dc813bf2015ed777435d1315a4f316826ced9d*Sun Apr 23 22:47:59 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                          | 12 ++++--------
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java | 21 +++++----------------
+ src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java                    | 14 ++++----------
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                       | 19 +++++--------------
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java                | 14 ++------------
+ src/test/java/nl/tudelft/jpacman/e2e/framework/startup/StartupTest.java |  2 +-
+ 6 files changed, 21 insertions(+), 61 deletions(-)
+
+3fbccc7d23c9e98811e03d5c58d04f3b353fc6ac*Sun Apr 23 22:00:50 2017 +0200*4 years, 11 months ago
+b469314dd62f41361e21d40f42259dcc96170a0f*Sun Apr 23 22:00:30 2017 +0200*4 years, 11 months ago
+9cbbcf28e0c47353f201f312f474cde1864a0b40*Sun Apr 23 22:00:11 2017 +0200*4 years, 11 months ago
+fa21f880b7593e99452f63369e55b29a238e5ac1*Sun Apr 23 21:47:22 2017 +0200*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+1db187771b8086e2d37de11d86c3dd25ab7b696c*Sun Apr 23 21:42:42 2017 +0200*4 years, 11 months ago
+ src/test/java/nl/tudelft/jpacman/e2e/framework/{StateNavigationSteps.java => startup/StartupSteps.java} | 28 ++++++++--------------------
+ src/test/java/nl/tudelft/jpacman/e2e/framework/{CucumberTest.java => startup/StartupTest.java}          |  8 ++++----
+ src/test/resources/frameworkfeatures/{ => startup}/startup.feature                                      |  0
+ 3 files changed, 12 insertions(+), 24 deletions(-)
+
+7fca090a825330d36ea1f3ab4ec37adcc0b415fe*Sun Apr 23 20:42:20 2017 +0200*4 years, 11 months ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+7f4b0055284fff7e9df852576339a53686937a8d*Sun Apr 23 13:30:17 2017 +0200*4 years, 11 months ago
+593d3db90964f90e77d3e6bb63ffaa3897085541*Sun Apr 23 13:29:32 2017 +0200*4 years, 11 months ago
+7ca429ee775ca344e6d8a9bfec4266e6b0a54b0e*Sun Apr 23 03:50:51 2017 -0700*4 years, 11 months ago
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+c038ca224b1b3d390ebe960249641377ec178edf*Sun Apr 23 03:49:31 2017 -0700*4 years, 11 months ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java  | 6 +++---
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+391a2a2d7987d9c6c266f475f16867e1c02a804c*Sat Apr 22 22:37:44 2017 +0200*5 years ago
+3a00d5b84ba67bcf9d104b389ca0dea7167ff90a*Sat Apr 22 22:30:33 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+4f8d0ab6213228368e87770968b653a8701d4642*Sat Apr 22 20:56:57 2017 +0200*5 years ago
+ pom.xml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+f18cc636b15550fa9baaefa72bc06e2e04115873*Sat Apr 22 20:39:55 2017 +0200*5 years ago
+ pom.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+c5f7102ab6ffa92f39ee9afe89e8b2c2705c33a8*Sat Apr 22 12:29:28 2017 +0200*5 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+0fa1f53e9f8f31d58c6fc111c5ebba620a723cc2*Sat Apr 22 12:27:29 2017 +0200*5 years ago
+52cce4e03618641527862a48e1b6543d41cb5c20*Sat Apr 22 12:26:26 2017 +0200*5 years ago
+50ba49f9e052e6167a1d72f7daf1356ec8c7deb4*Sat Apr 22 12:16:57 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java | 1 +
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java   | 1 +
+ 2 files changed, 2 insertions(+)
+
+35bf32dba09c0f1da7f60169c897d69b8fbc9b40*Sat Apr 22 12:06:52 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java             | 1 -
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java             | 1 -
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java               | 1 -
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java        | 1 -
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java            | 1 -
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java              | 1 -
+ src/test/java/nl/tudelft/jpacman/cucumber/StateNavigationSteps.java | 1 -
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java               | 3 +--
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java      | 9 +++------
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java             | 2 +-
+ 10 files changed, 5 insertions(+), 16 deletions(-)
+
+da3909961f50365eb49d18f1cdd979994a282789*Sat Apr 22 12:06:52 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+dcffdf3b65b39eee6f5c2560f0ab06512f290f4c*Sat Apr 22 12:06:52 2017 +0200*5 years ago
+ pom.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+568eb31487f706b02c8a3e03148b1f8b2a5b7253*Sat Apr 22 10:59:21 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/e2e/framework/StateNavigationSteps.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+91709e88cd0dad3610c0a1ec1e3a1d4966fa2928*Sat Apr 22 10:59:21 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/e2e/framework/CucumberTest.java   | 2 +-
+ src/test/resources/{features => frameworkfeatures}/startup.feature | 0
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+1fd10db14ec40b6ac432f04dc613cf70e60d8bfe*Sat Apr 22 10:59:21 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/{cucumber => e2e/framework}/CucumberTest.java         | 5 +++--
+ src/test/java/nl/tudelft/jpacman/{cucumber => e2e/framework}/StateNavigationSteps.java | 4 ++--
+ src/test/resources/features/startup.feature                                            | 6 ++++--
+ 3 files changed, 9 insertions(+), 6 deletions(-)
+
+a365e36b2af40e396b22f519a9ad322077f2a2c8*Sat Apr 22 09:39:40 2017 +0200*5 years ago
+afc2c2dcca3bae39587967fb88e7981d71b6d3dc*Fri Apr 21 12:01:09 2017 -0700*5 years ago
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+dbc23c48aff219f98265b7ab3a96bc1352356787*Fri Apr 21 12:00:51 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+6e80e3ed6a3be75da99789e67d1e003f968dd27e*Fri Apr 21 11:46:09 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java | 4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java  | 4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java   | 4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java  | 4 ++--
+ 4 files changed, 8 insertions(+), 8 deletions(-)
+
+9e1ec658e4026c5261eacff37e1594b44bc2f221*Fri Apr 21 10:27:16 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+803f301412bfdb7e56fe12f5ac047b0fed0b7761*Fri Apr 21 10:25:27 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Unit.java           |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java   |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java              |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 14 +++++++-------
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java   |  2 +-
+ 5 files changed, 11 insertions(+), 11 deletions(-)
+
+9da1cb15b7c90973217fd2a46b7bf2ceba023b83*Fri Apr 21 10:16:30 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Square.java | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+7e5cf67e8c5a301be6c2110727632557bb624ed8*Fri Apr 21 10:02:02 2017 -0700*5 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java    | 7 ++++++-
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 5 +++--
+ 2 files changed, 9 insertions(+), 3 deletions(-)
+
+51141303bec659bc1dad157d9901e61b04ab976d*Fri Apr 21 13:56:32 2017 +0200*5 years ago
+ AUTHORS.md | 20 ++++++++++++++++++++
+ 1 file changed, 20 insertions(+)
+
+a6cbc3c81f3a4b6c740bffb303095b11c1a2d117*Wed Apr 19 11:04:16 2017 +0200*5 years ago
+df121c8e6b576399933328eaaefaf733846233e2*Mon Apr 17 17:18:15 2017 +0200*5 years ago
+ pom.xml | 19 ++++++++++++-------
+ 1 file changed, 12 insertions(+), 7 deletions(-)
+
+af89754694c6d22c6637895e06d2ac8b4616eb50*Mon Apr 17 14:40:40 2017 +0200*5 years ago
+10280941d08414307575a9e7829cb8d6a2246fe5*Mon Apr 17 14:33:00 2017 +0200*5 years ago
+ pom.xml | 28 +++++++++++++++++++++++++++-
+ 1 file changed, 27 insertions(+), 1 deletion(-)
+
+08094ddd8b347fbbf02efa70ff395def6d675367*Thu Apr 13 17:33:43 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java     | 2 --
+ src/main/java/nl/tudelft/jpacman/level/Level.java     | 1 -
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java | 3 ++-
+ 3 files changed, 2 insertions(+), 4 deletions(-)
+
+f7aaf4cf4fe174f633c67f252307cff25a2380b7*Tue Apr 11 20:52:08 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java             | 1 +
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java             | 1 +
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java               | 1 +
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java        | 1 +
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java            | 1 +
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java              | 1 +
+ src/test/java/nl/tudelft/jpacman/cucumber/StateNavigationSteps.java | 1 +
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java               | 2 +-
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java      | 9 ++++++---
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java             | 2 +-
+ 10 files changed, 15 insertions(+), 5 deletions(-)
+
+76b54a3bacc83ff0b991d9272d601299a5a3e3f3*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 4 +++-
+ src/main/java/nl/tudelft/jpacman/level/Level.java                   | 6 ++++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java          | 2 +-
+ 3 files changed, 8 insertions(+), 4 deletions(-)
+
+362842c59a5ed0eeaf5d70a8fa8e093cea040084*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+63037b241a17acce94b59e5d4d68673e6fc014c8*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+
+787b4ab7d6dbdabb8d51e720ec90c2a82c024759*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+722a0381b258981cb40c308c810d16d6d4c6d844*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/board/Square.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+ec05a846704100f81d48f5394996d5a6021de3c5*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java        | 4 +++-
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java | 3 ++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+9b31ed2047486b77ddb9460fbcc65db3be48a534*Tue Apr 11 20:52:07 2017 +0200*5 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+fc2d4d9e2c560a1cc369ee569fa10a25e556d9f1*Tue Apr 11 20:51:54 2017 +0200*5 years ago
+ pom.xml                                                    | 54 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/Launcher.java             | 34 +++++++++++++++++-----------------
+ src/main/java/nl/tudelft/jpacman/board/Board.java          |  4 +++-
+ src/main/java/nl/tudelft/jpacman/board/Square.java         |  5 +++--
+ src/main/java/nl/tudelft/jpacman/board/Unit.java           | 13 ++++++++++++-
+ src/main/java/nl/tudelft/jpacman/level/Level.java          |  5 ++++-
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java              |  7 +++++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java     | 16 ++++++++++------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java      | 13 +++++++++----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java      |  3 ++-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java       | 12 ++++++++----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 23 +++++++++++++----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java      |  8 ++++++--
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java    |  4 ++--
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java   |  2 +-
+ 15 files changed, 149 insertions(+), 54 deletions(-)
+
+3b2cd9878b44002fa63afa49f539f95aa7849558*Tue Apr 11 20:43:55 2017 +0200*5 years ago
+c28297b134bbae5b2937f7b139f0c9d3756b95ba*Tue Apr 11 20:38:51 2017 +0200*5 years ago
+43aac19db93e73646297dde14dbc2c3d7f167e9e*Tue Apr 11 20:34:17 2017 +0200*5 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+79ca5d52f47cfb1e298bbd46245b35a79980b441*Sat Apr 8 22:37:26 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java        | 10 +++++-----
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java   | 16 ++++++++--------
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java          |  8 ++++----
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java       | 10 +++++-----
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java         | 10 +++++-----
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java          | 20 ++++++++++----------
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 20 ++++++++++----------
+ 7 files changed, 47 insertions(+), 47 deletions(-)
+
+86291bf40b0f3e5d28184c821c05cb056d8bcb88*Sat Apr 8 22:28:22 2017 +0200*5 years ago
+ pom.xml | 3 +++
+ 1 file changed, 3 insertions(+)
+
+c3ee52ef29191c78bba64845e7293589815d2e07*Sat Apr 8 18:45:36 2017 +0200*5 years ago
+ doc/scenarios.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c5b03c21be1ada6f76237e872e4de4bf58278336*Thu Apr 6 14:39:05 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+57a3531c0914487fe4370486c0abff1c65feeaca*Sun Apr 2 10:51:49 2017 +0200*5 years ago
+ pom.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+09c731676c489f26fe8deccfdcf4c232d81f3d16*Sun Mar 26 20:14:03 2017 +0200*5 years ago
+ pom.xml                                             | 7 -------
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java | 8 +-------
+ 2 files changed, 1 insertion(+), 14 deletions(-)
+
+3cf5a13d6d74e7fbe117aa872e3ebb5edeb4e6ec*Sun Mar 26 19:25:04 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+5aea7daa6f48f604500c2710de1d58b573ec78b8*Sun Mar 26 15:40:04 2017 +0200*5 years ago
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java | 31 ++++++++++++++++---------------
+ 1 file changed, 16 insertions(+), 15 deletions(-)
+
+d1ebd4121ff7a6632a5a0e2599f25cbef88bf110*Thu Mar 23 08:20:55 2017 +0100*5 years ago
+ pom.xml | 22 ++++++++++++----------
+ 1 file changed, 12 insertions(+), 10 deletions(-)
+
+2dd485d1f5a932bf5c2b3560bfc81470d060140c*Thu Dec 29 13:44:22 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java | 39 ++++++++++++++++++---------------------
+ 1 file changed, 18 insertions(+), 21 deletions(-)
+
+859a083edba9f036ab21b7a560d4dbb258d7642c*Thu Dec 29 13:29:27 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+
+a818845f85fd8c38dc4d119789519cc242e7ea1e*Sun Dec 25 16:16:42 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 44 +++++++++++++++++++-------------------------
+ 1 file changed, 19 insertions(+), 25 deletions(-)
+
+f3f34e0ed7d18ad1df58587bea3c7e24ce43738b*Sun Dec 25 16:16:28 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java | 70 ++++++++++++++++++++++++++++++++++------------------------------------
+ 1 file changed, 34 insertions(+), 36 deletions(-)
+
+af301553d30a31828a7955e29b921ee4b48ba4b3*Wed Dec 14 15:34:57 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java | 130 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----------------------------------------------------------------------
+ 1 file changed, 59 insertions(+), 71 deletions(-)
+
+0f0af0de746b8a3b20df138dd2d619a5928bf281*Mon Dec 12 19:46:56 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+052614e3bbbcb084ceecea365c40718f7ccbced1*Sun Dec 11 20:32:40 2016 +0100*5 years ago
+ pom.xml                                                | 40 +++++++++++++++++++++++++++++++++-------
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java |  8 ++++----
+ 2 files changed, 37 insertions(+), 11 deletions(-)
+
+f1fbd2872394d3f4296f008270582cf48674b35b*Sun Dec 11 16:25:25 2016 +0100*5 years ago
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java | 15 ++++++---------
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+
+a341780476f3d48dbf8ce753273a1327b712cc3d*Sun Dec 11 11:33:26 2016 +0100*5 years ago
+ pom.xml | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+ffbbaf7689d0eb1050f2558dfa398511069a0148*Sat Dec 10 21:24:14 2016 +0100*5 years ago
+a508ed1b6dee6b7a085de6faa15d47f3ecd944cb*Sat Dec 10 21:16:19 2016 +0100*5 years ago
+4d51f341e0ad3500b1d0d7f3f9d80f42066ea9c9*Wed Dec 7 22:09:19 2016 +0100*5 years ago
+437f42d555a77a49a5d118bf4c269cce6777f771*Sun Jul 17 11:36:46 2016 -0300*6 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 53 +++++++++++++++++++++--------------------------------
+ 1 file changed, 21 insertions(+), 32 deletions(-)
+
+2cde418c54755d92530df79495ed5c1b6d5a25ed*Wed May 4 15:35:22 2016 +0200*6 years ago
+ doc/scenarios.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+d46d8cb5381c7a14dea237f364a9a70bdc7ad0e7*Sat Apr 23 16:57:38 2016 +0200*6 years ago
+ pom.xml                                                  | 106 +++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java |  12 +++++-------
+ 2 files changed, 60 insertions(+), 58 deletions(-)
+
+2c6863f6333ee8374af43def6043af4f86967236*Sat Apr 23 15:59:21 2016 +0200*6 years ago
+7f6ab45bae7d4ec2c4d49f764b04bcaf060196a6*Sat Apr 23 15:55:08 2016 +0200*6 years ago
+ pom.xml                                                             |  1 -
+ src-assembly.xml                                                    |  2 +-
+ src/main/java/nl/tudelft/jpacman/board/Board.java                   |  6 +++---
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                    |  5 +----
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 11 ++++-------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java               |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostColor.java          |  2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java            |  2 +-
+ src/test/java/nl/tudelft/jpacman/cucumber/StateNavigationSteps.java |  2 +-
+ 9 files changed, 13 insertions(+), 20 deletions(-)
+
+50420ef05da5d9853d0965779c395380f6eed19d*Sat Apr 23 15:44:03 2016 +0200*6 years ago
+e88707587899895cda8986c657ccb09324372907*Sat Apr 23 15:43:05 2016 +0200*6 years ago
+b114c7234c2214f0c0bec1815bb473f97aaf78fa*Sat Apr 23 14:47:45 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+9f427ab75388c5d6fafd2d69de3e40868db680fe*Sat Apr 23 14:37:12 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java            |  9 +++++----
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 11 +++++++----
+ 2 files changed, 12 insertions(+), 8 deletions(-)
+
+a4b97d8d2c96406a7dec082303421b0d04eee1da*Sat Apr 23 13:04:58 2016 +0200*6 years ago
+a9a4156c49722630425ad5b32eede99b74bf1007*Sat Apr 23 13:03:34 2016 +0200*6 years ago
+23e1d565ff45a42f107d20537f4520844aa200a4*Sat Apr 23 12:24:56 2016 +0200*6 years ago
+0b4cea20e9ed134d5ba07beebd242f4b30a217ca*Wed Apr 20 16:58:35 2016 +0200*6 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+9a511a2b782fd4e2311d9887f18b33eb85306a4d*Wed Apr 20 16:48:41 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java |  7 +------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java   | 12 +++---------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java    |  8 +-------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java    | 25 +++++++++++++++++++++++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java     |  8 +-------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java    |  8 +-------
+ 6 files changed, 30 insertions(+), 38 deletions(-)
+
+deb3004d702bcf89a2d2fe466065f571edb0313c*Wed Apr 20 16:13:01 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                 | 1 +
+ src/main/java/nl/tudelft/jpacman/level/Level.java              | 1 +
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java        | 2 +-
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java          | 2 ++
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 2 +-
+ 5 files changed, 6 insertions(+), 2 deletions(-)
+
+b3c906490290508c8c8d59c138085d01edb0e76e*Tue Apr 19 14:57:03 2016 +0200*6 years ago
+bfa3b069c6fa5e219f4338fa74ffce9889577164*Tue Apr 19 14:32:48 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+84be68a2f5c4aaf3614e5dbcd2fb31add63642c1*Mon Apr 18 21:54:39 2016 +0200*6 years ago
+2cd6f6f1e769201ffce264df5d45f238f77295af*Mon Apr 18 21:48:43 2016 +0200*6 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+2aca59b01d502ad22521dbae9b9900aeab016982*Mon Apr 18 21:46:53 2016 +0200*6 years ago
+ README.md | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+3a5b891976e996d4766412fdaf1876660230ba04*Mon Apr 18 21:44:55 2016 +0200*6 years ago
+ .pmd          |  8 ++++++++
+ pmd-rules.xml | 55 ++++++++++++++++++++++---------------------------------
+ 2 files changed, 30 insertions(+), 33 deletions(-)
+
+e888dd687a61a7064f4a728fe699ed4ec4bb98b0*Mon Apr 18 21:01:07 2016 +0200*6 years ago
+763fe6f7ab6de2971df609f62fcb36d6a52bed86*Mon Apr 18 20:56:46 2016 +0200*6 years ago
+4ec7f0aefe5fe65cc7418cb036f2ff9611579975*Mon Apr 18 20:54:29 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 24 +++++++++++++++++++++++-
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+
+29c80ef270374ee68ecf63be03f89ec605b26eb2*Mon Apr 18 15:38:05 2016 +0200*6 years ago
+ doc/scenarios.md | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+7404d222486fd29dbbccf17aa0a96ed60c888056*Mon Apr 18 12:42:20 2016 +0200*6 years ago
+ src/test/java/nl/tudelft/jpacman/cucumber/CucumberTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c3f6e1d5cfab3163c005fc20e9f7ecf12e980deb*Mon Apr 18 12:01:20 2016 +0200*6 years ago
+ pom.xml                                                             | 16 ++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/cucumber/CucumberTest.java         | 24 ++++++++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/cucumber/StateNavigationSteps.java | 74 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/resources/features/startup.feature                         |  9 +++++++++
+ 4 files changed, 123 insertions(+)
+
+ad282268d0344fd94fa364fd94de64f38106951b*Sun Apr 17 18:00:29 2016 +0200*6 years ago
+a83094d74a16fe8b1a8da8fde165437273113c86*Sun Apr 17 13:53:27 2016 +0200*6 years ago
+ pom.xml | 32 +++++++++++++++-----------------
+ 1 file changed, 15 insertions(+), 17 deletions(-)
+
+edc3934fb0bbad1f9c88ef0958d864262430d03a*Sun Apr 17 13:48:31 2016 +0200*6 years ago
+ pom.xml | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+653561dce5d9b91c21b34ef80ca47e019b6d98e0*Sun Apr 17 12:41:28 2016 +0200*6 years ago
+ pom.xml | 24 +++++++++++++++---------
+ 1 file changed, 15 insertions(+), 9 deletions(-)
+
+aaf5b2bab73a8e3b58088fb38b9d0430f6c4bcbc*Tue Apr 12 08:45:20 2016 +0200*6 years ago
+96eec20b76582a924ce58ef7d54617510eb2666d*Sun Apr 10 21:43:57 2016 +0200*6 years ago
+ pmd-rules.xml                                                           |  5 ++++-
+ src/main/java/nl/tudelft/jpacman/Launcher.java                          |  3 +--
+ src/main/java/nl/tudelft/jpacman/board/Board.java                       |  2 +-
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java                |  4 ++--
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java                       |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java                  |  9 +++------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java                   |  8 +++-----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java                   |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                    | 15 +++++----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java              |  9 ++++-----
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java                   |  9 +++------
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java                |  2 +-
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java                   | 22 +++++++++++-----------
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java                 |  6 +++---
+ 16 files changed, 45 insertions(+), 57 deletions(-)
+
+0256ae713a1b4f10f786bc6260969ed297b5d06e*Sun Apr 10 18:03:43 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java                   | 6 +++---
+ src/main/java/nl/tudelft/jpacman/board/Direction.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/Square.java                  | 3 +--
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java         | 1 -
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java           | 5 +++++
+ 6 files changed, 11 insertions(+), 8 deletions(-)
+
+063093620da3980934b43ae62cfe9665a8e453ea*Sun Apr 10 09:48:01 2016 +0200*6 years ago
+f3e228b4b04be79a1ee4fb8e9a41b3498243a50f*Sat Apr 9 23:21:01 2016 +0200*6 years ago
+dc4606947738ad3c141d16fe94afc6a7ef308147*Sat Apr 9 23:06:50 2016 +0200*6 years ago
+ pom.xml | 41 +++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 41 insertions(+)
+
+6d087d6c15caccc7ba77c31ef867da2d30e3d5b2*Sat Apr 9 21:59:14 2016 +0200*6 years ago
+ pom.xml | 29 +++++++++++++++++------------
+ 1 file changed, 17 insertions(+), 12 deletions(-)
+
+0fc2154b7b797d13061587e9eb5a6e5999e49a30*Sat Apr 9 17:24:42 2016 +0200*6 years ago
+ pom.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+cf000be79e614706d3b64ab448d59d0b6f83b921*Sat Apr 9 16:10:02 2016 +0200*6 years ago
+4dbac6dbdf72fba6de4b3ef958f614146851a10c*Sat Apr 9 11:31:02 2016 +0200*6 years ago
+ dependency-reduced-pom.xml | 226 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ pom.xml                    |   3 +++
+ 2 files changed, 3 insertions(+), 226 deletions(-)
+
+bc3004c0b0e311f4f81580700c64de43d9f94532*Sat Apr 9 09:52:19 2016 +0200*7 years ago
+ pom.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+08917590fb18fab22643bc70d827b248c8211b3c*Sat Apr 9 09:48:50 2016 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+d38d074d5309bea357630d06ffb448a31cfb2b31*Sat Apr 9 09:43:49 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 1 +
+ 1 file changed, 1 insertion(+)
+
+dbf1067ce3a357b80a6f202eb79be6a01db49ad4*Sat Apr 9 09:42:01 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+6a6e8742874d930dfb606fcd3ac7efd374ffc76f*Sat Apr 9 09:35:33 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java | 9 ---------
+ 1 file changed, 9 deletions(-)
+
+e5bb91eda171b7323dc2bedd4ecedfdfe4f10604*Sat Apr 9 09:29:08 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java | 29 -----------------------------
+ 1 file changed, 29 deletions(-)
+
+343370af437776b5d11a048db657f316cdad83a5*Sat Apr 9 09:24:57 2016 +0200*6 years ago
+ src/main/java/nl/tudelft/jpacman/board/Square.java       | 17 ++++++++---------
+ src/main/java/nl/tudelft/jpacman/board/Unit.java         |  1 +
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java | 17 ++++++++++++++++-
+ 3 files changed, 25 insertions(+), 10 deletions(-)
+
+6470f32f6659e305df8e1ad6d574f6508d75b8ad*Sat Apr 9 09:24:37 2016 +0200*6 years ago
+ pom.xml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+aee81a78b439be7ab5aca126509335bc58a27913*Sat Apr 9 08:42:52 2016 +0200*6 years ago
+08b1d9dc302de5ec9eb83acd3b7425f242e0e385*Sat Apr 9 08:42:18 2016 +0200*6 years ago
+d5eafea4f966680ef75613532214c6506264a808*Fri Apr 8 12:36:23 2016 +0200*6 years ago
+ dependency-reduced-pom.xml | 30 ++++++++++++++++++++++++++++++
+ pom.xml                    |  2 ++
+ 2 files changed, 32 insertions(+)
+
+ed9c6f9d9fd60de64a6e0ef55765e6281271b2b1*Fri Apr 8 12:21:22 2016 +0200*6 years ago
+ dependency-reduced-pom.xml | 196 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ pom.xml                    |  13 +++++++++++++
+ 2 files changed, 209 insertions(+)
+
+ac7b8059310a4fb7e6735d6b70c739d8deea47cb*Sat Jan 9 21:47:15 2016 +0100*6 years ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c1206257e97c2f5d6458a910fae40107935f2b50*Sat Jan 9 21:41:39 2016 +0100*6 years ago
+ src/main/java/nl/tudelft/jpacman/annotations/ParameterizedAssignment.java | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+d661652202b1b23dc2b4d9a7f6441367ddbb5bbe*Thu Jun 18 20:47:34 2015 +0200*7 years ago
+e372cd77ca2e7e412921f12e4f1513b9ce0d1016*Thu Jun 18 13:25:16 2015 +0200*7 years ago
+ doc/scenarios.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+33207397f816f9a8eef32ba8ffd6cb08c6fed6d3*Wed Jun 17 14:54:12 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/level/Player.java        | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java | 8 ++++++--
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+
+329f2d99132bdb73864636421a61f3b214cad9de*Fri Jun 12 21:18:26 2015 +0200*7 years ago
+c4b2af798153ad6a423a41b92a38c036a8195676*Fri Jun 12 19:12:11 2015 +0200*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+8e477c600abd4d9c8536b3d719fb5498a5e67b4d*Wed Jun 10 16:15:38 2015 +0200*7 years ago
+b883c2e7bff31247c76a72b414be87c707300509*Wed Jun 10 16:15:23 2015 +0200*7 years ago
+d2ccb89559a5c39d07cb5c4b616501af2d73933b*Mon Jun 8 08:25:48 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java        | 11 +++++++++--
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java | 21 ++++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java      | 47 +++++++++++++++++++++++++++++++++++++++++++----
+ 3 files changed, 72 insertions(+), 7 deletions(-)
+
+5613f44e35fc64f1bad4fcaa453e055f0b223fc5*Mon Jun 8 08:25:48 2015 +0200*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+cfc3617344fded3adc64a0fa2b12e392553150cd*Mon Jun 8 08:25:48 2015 +0200*7 years ago
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+e4c734466053cef990eafd934199af4e1c101960*Mon Jun 8 08:25:47 2015 +0200*7 years ago
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+280ecbdc8bd9678f4c1b2db87f2ffcbdd8e82557*Mon Jun 8 08:25:47 2015 +0200*7 years ago
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java   | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java          | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java       | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java         | 2 +-
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java          | 2 +-
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 2 +-
+ 6 files changed, 6 insertions(+), 6 deletions(-)
+
+2ba991f7c0af2fe0568862fd3dd86422cecee94c*Mon Jun 8 08:25:41 2015 +0200*7 years ago
+ pmd-rules.xml | 50 +++++++++++++++++++++++++++++---------------------
+ 1 file changed, 29 insertions(+), 21 deletions(-)
+
+20b35266a2664888bbab087545efec5814c2ee69*Sat May 30 15:53:34 2015 +0200*7 years ago
+ pmd-rules.xml |  28 ++++++++++++++++++++++++++++
+ pom.xml       | 220 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------
+ 2 files changed, 170 insertions(+), 78 deletions(-)
+
+36e76cc25dd3c1b7ce289a5f5297f57e889a4822*Sat May 30 14:42:26 2015 +0200*7 years ago
+f5dba1fdca749b65dccb068d3147af10b819174d*Wed May 13 13:06:40 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+5dc73216c23a4f51ae89b4045b0e2f5525fd10b7*Tue May 12 20:46:31 2015 +0200*7 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+6c1deba8c0e1bff92af26b3f21e5078d85eba41a*Tue May 12 20:44:47 2015 +0200*7 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java        | 1 +
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 1 +
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java        | 1 +
+ 3 files changed, 3 insertions(+)
+
+c12dfe8356247ed2dfa1843c96e39841c126de9f*Tue May 12 20:42:31 2015 +0200*7 years ago
+ checkstyle.xml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+1606a47ce81824d1521daefb737c64b1d23ed0a6*Mon May 11 16:02:17 2015 +0200*7 years ago
+08ed8fec6d99bc08c313e48926d273ca314acf89*Wed May 6 20:15:45 2015 +0200*7 years ago
+ doc/scenarios.md | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+c4d152defd3cdb97c2733c9e362b6cba66802c40*Sat Apr 18 13:46:30 2015 +0200*7 years ago
+50e8bacade042d94af62f37658a9da33a2dfaeae*Sat Apr 18 13:46:18 2015 +0200*7 years ago
+7a8c8b13dc29d1592982b75f22a6cefc0844ba8d*Sat Apr 18 08:42:26 2015 +0200*7 years ago
+ pom.xml | 28 +++++++++++-----------------
+ 1 file changed, 11 insertions(+), 17 deletions(-)
+
+e14adebcbc6363f46ef5951430b7876f4f3818ff*Wed Apr 15 20:42:55 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c51175d3a4656e219ef46e3eb0e13ced90bb3cb9*Wed Apr 15 20:42:35 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+eb45340acb9e89f3030a0a6418b370dabf548bb2*Wed Apr 15 20:41:47 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java | 4 ++--
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+04f41095fef08b84d46cdfd01717b9d0c7e037eb*Wed Apr 15 00:25:17 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+68b1c03860ac35d08c2801761d814743312ce242*Tue Apr 14 23:40:12 2015 +0200*7 years ago
+ pom.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+750f12a7e080be99bff29bbbf87b57d972dc9023*Tue Apr 14 23:15:57 2015 +0200*7 years ago
+d02774078e4af91b82038de1bd3c6a35eed793c8*Mon Apr 13 23:42:48 2015 +0200*7 years ago
+ src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java | 16 ++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java           |  2 --
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java            |  6 ++++++
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java              | 12 +++++++++---
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java              |  3 ++-
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java     |  6 ++++++
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java            |  6 ++++--
+ 7 files changed, 43 insertions(+), 8 deletions(-)
+
+4455af739b5fb59af26612a0d8a3267a43c0728f*Mon Apr 13 22:55:47 2015 +0200*7 years ago
+ checkstyle.xml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+81280196339f48b3f507fa1e766f2a39bf935e3c*Mon Apr 13 22:34:56 2015 +0200*7 years ago
+ pom.xml          | 2 +-
+ src-assembly.xml | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+c83c6134f59eb7f59a3a06f056ea6a936976ccca*Mon Apr 13 22:34:21 2015 +0200*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+91ffe53df0122fced47d24a178e5dc14d751fda3*Thu Apr 2 22:04:40 2015 +0200*7 years ago
+86e6c451c18e3af13709ccc714cb46a193d29ede*Thu Apr 2 21:56:48 2015 +0200*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+d9ef199afe49c5488856c1355cd0fe9f674fa219*Thu Apr 2 21:49:35 2015 +0200*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+14ba77bd7fded46bfc778e42226ccc85b0260253*Thu Apr 2 21:45:50 2015 +0200*7 years ago
+abd110a29e44f5ac1c4254d1e3cee36e42da11db*Thu Apr 2 20:36:13 2015 +0200*7 years ago
+ pom.xml | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+f1f697f123678e8cb85adc597c7e9bc2eef44c5a*Thu Mar 26 07:55:22 2015 +0100*7 years ago
+493410174d0dab87943ff71319815f9c4f09ebc9*Wed Mar 25 20:37:28 2015 +0100*7 years ago
+ pom.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+34d4c7f6992f6ad1039c1b41039f313ae50efe4f*Sun Mar 22 16:44:21 2015 +0100*7 years ago
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+c093802cfad630b8def9e17509b1c4767c603edc*Sun Mar 22 01:14:35 2015 +0100*7 years ago
+db4c90880ef77086f2cf65a07cf32556e68f8f87*Sun Mar 22 00:01:20 2015 +0100*7 years ago
+ .travis.yml | 2 ++
+ pom.xml     | 4 ++--
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+cb9d80070a8d9fc167e1f184424ec3fe29e3d115*Sat Mar 21 23:59:55 2015 +0100*7 years ago
+19d8bd612008282d774736e0d53eb939a644ce49*Sat Mar 21 23:35:08 2015 +0100*7 years ago
+ pom.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+c824b5d0b101e9dd5d5e98ab10e9569a1224a676*Sat Mar 21 12:24:30 2015 +0100*7 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+762ea9ad69e7f08c950a468b0cf9122578ad9944*Sat Mar 21 12:24:05 2015 +0100*7 years ago
+ pom.xml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+3ffe23e1d543e1a9bdd66320bcbee0340579202f*Mon Mar 16 23:50:32 2015 +0100*7 years ago
+ pom.xml | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+f248be19c66562e0b6d6a50cf3a1cc1fb47db01f*Mon Mar 16 23:41:56 2015 +0100*7 years ago
+ pom.xml | 14 ++++++++------
+ 1 file changed, 8 insertions(+), 6 deletions(-)
+
+ce1838716f4693254de8aa8686bc365d93abd884*Mon Mar 16 23:18:14 2015 +0100*7 years ago
+ pom.xml | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+0a6b503db20f30ca678a11d3c0993194ef6f603a*Mon Mar 16 22:20:47 2015 +0100*7 years ago
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+3bbee4a2270b94c5006d14c3ae5222333a97f1bf*Mon Mar 16 21:57:43 2015 +0100*7 years ago
+ pom.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+e7e302d27ef3395659e2a9b3151e1ae48f8d3690*Mon Mar 16 21:48:05 2015 +0100*7 years ago
+ pom.xml | 19 +++++++++++--------
+ 1 file changed, 11 insertions(+), 8 deletions(-)
+
+264a16cc8825b310b7f664b8cfe8b92c6d7e28d5*Mon Mar 16 21:29:45 2015 +0100*7 years ago
+ pom.xml | 120 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------------------------------
+ 1 file changed, 57 insertions(+), 63 deletions(-)
+
+62e3af4163365c590f018dd2b48225932a709e14*Sun Mar 15 15:00:10 2015 +0100*7 years ago
+879a58d04c06472be0b9ff3ada51aa514cf240d4*Mon Feb 23 12:22:46 2015 +0100*7 years ago
+cdcc20b8bd557c00df00e5b12bd601e2bb26530c*Sat Aug 16 15:02:44 2014 +0200*8 years ago
+ pom.xml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+4777c54bb5cdbf4ef648241ff979550c9a681626*Tue Jun 24 15:07:13 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+50cc31416a02dad5d8587b5eaef1090aa08ed646*Wed Apr 23 16:18:38 2014 +0200*8 years ago
+b48f0629f59b70fbda69b679edeabad6e3bcc230*Wed Apr 23 16:04:26 2014 +0200*8 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+e6cec5e5ef2436190b6d8f3c470e3bec8fc9b91e*Wed Apr 23 15:16:30 2014 +0200*8 years ago
+3515045347e1a7bec5619abb22293d5412114e29*Tue Apr 22 14:25:35 2014 +0200*8 years ago
+5f132d16d9258026ab1a19a973c23f275c1ad0e9*Tue Apr 22 14:18:00 2014 +0200*8 years ago
+ pom.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+a912ed7fe0fde0406f3d675222baed491d9543b4*Tue Apr 22 14:16:11 2014 +0200*8 years ago
+79182b8e1790d6e8d1661ffbf5fc1f522dd2fa9b*Tue Apr 22 12:27:34 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+6e09002071bf0eceba71d1f3e30a28d331719995*Mon Apr 21 22:39:00 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java        |  2 +-
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 15 ++++++++-------
+ 2 files changed, 9 insertions(+), 8 deletions(-)
+
+99499b78ff6700bd16a6988b1aa7e4424ebeb7bc*Mon Apr 21 22:34:50 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/PacmanConfigurationException.java | 23 +++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java         |  5 +++--
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java           | 13 ++++++++-----
+ 3 files changed, 34 insertions(+), 7 deletions(-)
+
+f43ab42806f12b5cb5ea1a077732e8afd65d6469*Mon Apr 21 16:14:24 2014 +0200*8 years ago
+ doc/uml/FactoryWiring.uxf    | 343 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ doc/uml/SinglePlayerGame.uxf | 245 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 588 insertions(+)
+
+f415ecd464fd73a34d5ad8991d85ac47b4f48d04*Sat Apr 19 20:08:38 2014 +0200*8 years ago
+c57ebff3b2dcd94f11c76aad1ca64e4d464a9860*Sat Apr 19 19:57:06 2014 +0200*8 years ago
+ pom.xml | 6 ------
+ 1 file changed, 6 deletions(-)
+
+9892b607542c0076e3243f894db41c6ebe9cb276*Thu Apr 17 15:34:23 2014 +0200*8 years ago
+fcdb3a17f32e0305b594fbfeeff2eb0ac2f0ebc8*Thu Apr 17 11:44:24 2014 +0200*8 years ago
+ pom.xml                                                    |  5 -----
+ src/main/java/nl/tudelft/jpacman/level/Level.java          | 15 ---------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java     | 20 +-------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java      | 28 +---------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java      |  9 ---------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java       | 29 -----------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 18 ------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java      | 24 ------------------------
+ src/main/resources/logback.xml                             | 20 --------------------
+ 9 files changed, 2 insertions(+), 166 deletions(-)
+
+2eb94bfe6d0bd3b3317e37d196ac42332a7ea917*Thu Apr 17 11:28:50 2014 +0200*8 years ago
+39d9ad99bfd191629fe9121edab6b9fce0d92ffb*Thu Apr 17 10:20:59 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 7 +++----
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/package-info.java        | 4 ++--
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java             | 4 ++--
+ 5 files changed, 9 insertions(+), 10 deletions(-)
+
+f8ec86a96232375efa977d61efaaef5ce0a763f1*Thu Apr 17 09:44:54 2014 +0200*8 years ago
+64dcf3882ce880253b3eb408872ede53d2b318d7*Thu Apr 17 09:40:45 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+5f213f66925c0e1306affe69ab28208ced30979a*Wed Apr 16 16:59:19 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java | 45 +++++++++++++++++++++++++++++++++------------
+ 1 file changed, 33 insertions(+), 12 deletions(-)
+
+268112208cfea8fd414014fa0642d608392fea46*Fri Apr 11 23:58:34 2014 +0200*8 years ago
+9330a9055b37ed70388059b81cc4d2c49d0f4c87*Fri Apr 11 22:46:36 2014 +0200*8 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+f45e5e25da0599d059805a03da096c1070d5e224*Fri Apr 11 22:46:07 2014 +0200*8 years ago
+ doc/scenarios.md | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+e19e56c445ed86e5ce173a4e34b88546dc6db474*Thu Apr 10 11:03:28 2014 +0200*8 years ago
+b33f6dadb0fcfe7dd35d3b55fb9a7325ae750c22*Thu Apr 10 09:19:09 2014 +0200*8 years ago
+ pom.xml                                                      | 8 ++++++++
+ src/main/java/nl/tudelft/jpacman/Launcher.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/Board.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java     | 2 +-
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java      | 5 +++--
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java | 4 ++--
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java        | 2 +-
+ 7 files changed, 17 insertions(+), 8 deletions(-)
+
+769beb0857777fdd37e1a1344eecb0e3d1aef0ee*Wed Apr 9 21:54:15 2014 +0200*8 years ago
+6ca1fa98744970715277e7f8c441e755c2e20f8c*Wed Apr 9 18:48:37 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+
+b30ee992a03170a8ec886319bd736a7c02e204a7*Wed Apr 9 17:54:13 2014 +0200*8 years ago
+86aa1f0b043ca85c5eabac475a1b2e4c5ec0289e*Wed Apr 9 17:52:24 2014 +0200*8 years ago
+4c362e98601314158051cd0a2b73a94dd091d549*Wed Apr 9 17:50:43 2014 +0200*8 years ago
+ pom.xml                                 | 25 ++++++++++++++++++++++++-
+ src/main/resources/META-INF/MANIFEST.MF |  1 +
+ 2 files changed, 25 insertions(+), 1 deletion(-)
+
+d292403ba2358fa4e50db341a729ebcbe7b8e2fa*Wed Apr 9 16:42:02 2014 +0200*8 years ago
+71152780e2fba8b255015a67e2bd06ee76c8216d*Wed Apr 9 16:40:01 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+a5bccd9b103a91c6066670ac22a8aff316de4486*Wed Apr 9 16:35:07 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                      | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/Board.java                   | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java            | 6 +++---
+ src/main/java/nl/tudelft/jpacman/board/Direction.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/Square.java                  | 2 +-
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                    | 2 +-
+ src/main/java/nl/tudelft/jpacman/game/Game.java                     | 2 +-
+ src/main/java/nl/tudelft/jpacman/game/GameFactory.java              | 2 +-
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java         | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 8 ++++----
+ src/main/java/nl/tudelft/jpacman/level/CollisionMap.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java                   | 6 +++---
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java            | 4 ++--
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/Pellet.java                  | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/Player.java                  | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java           | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java                       | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java              | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostColor.java          | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java        | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java          | 4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java               | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java         | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java          | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/Sprite.java                 | 2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/Action.java                     | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java                 | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java                | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java             | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                   | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java            | 2 +-
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java                 | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java             | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java               | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java        | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java               | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java            | 2 +-
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java              | 2 +-
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java               | 2 +-
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java      | 2 +-
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java             | 2 +-
+ 48 files changed, 57 insertions(+), 57 deletions(-)
+
+a6bf51561ecf7c3297625528ba9d3005ebb17ca9*Tue Apr 8 23:53:34 2014 +0200*8 years ago
+ src-assembly.xml | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+
+bf97c0236dbb2c6fa889006b9d812c4975a52730*Tue Apr 8 14:18:33 2014 +0200*8 years ago
+ pom.xml                                                 | 19 +++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java |  2 +-
+ 2 files changed, 20 insertions(+), 1 deletion(-)
+
+55f0faeefb6bdda66decdeb24aed3cad3ecc6b9f*Mon Apr 7 22:52:35 2014 +0200*8 years ago
+ pom.xml | 9 ---------
+ 1 file changed, 9 deletions(-)
+
+f32cc3389d6574e1ed17df5bacc1d088321e1296*Mon Apr 7 22:46:00 2014 +0200*8 years ago
+ pom.xml | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+d75dcba448a86cf05b1e0fd666a993a9144b5053*Mon Apr 7 22:33:28 2014 +0200*8 years ago
+ pom.xml | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+b58a7e6ac8b02b9f9489d25d6e0112b2653c7f45*Mon Apr 7 16:58:55 2014 +0200*8 years ago
+ pom.xml | 102 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------------------
+ 1 file changed, 83 insertions(+), 19 deletions(-)
+
+d439ee5385862163ac82a4f42fa9972003cf2421*Mon Apr 7 16:46:57 2014 +0200*8 years ago
+ .checkstyle                                                             |  10 ++++++++++
+ checkstyle.xml                                                          | 126 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/Launcher.java                          |  81 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-------
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java                |   4 ++--
+ src/main/java/nl/tudelft/jpacman/board/Square.java                      |   2 +-
+ src/main/java/nl/tudelft/jpacman/game/Game.java                         |   4 ++--
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java     |  30 +++++++++++++++++++++++++-----
+ src/main/java/nl/tudelft/jpacman/level/CollisionMap.java                |  16 ++++++++++------
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java |  18 +++++++++---------
+ src/main/java/nl/tudelft/jpacman/level/Level.java                       |   4 ++--
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                |  18 ++++++++++++------
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java                   |  86 +++++++++++++++++++++++++++++++++++++++++++++++---------------------------------------
+ src/main/java/nl/tudelft/jpacman/level/Player.java                      |   8 ++++++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java                  |   3 +--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java                   |  23 ++++++++++++++++-------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostColor.java              |   5 +++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java            |   4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java                    |   4 +++-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java              |  48 ++++++++++++++++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java                   |   4 +++-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/package-info.java            |   2 +-
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java              |   7 ++++++-
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java                |   3 +++
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java                       |   9 ++++-----
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java                |   5 +++--
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java                     |   5 ++++-
+ 26 files changed, 405 insertions(+), 124 deletions(-)
+
+ca85d66d439ffef4b31e41811901cb02c8ac8548*Sun Apr 6 23:22:42 2014 +0200*8 years ago
+cd4ae4bb69a1e60427b9d01a050fd770f2319217*Sun Apr 6 22:44:05 2014 +0200*8 years ago
+ README.md | 34 ++++++++++++++++++++++++++++++++--
+ 1 file changed, 32 insertions(+), 2 deletions(-)
+
+11d2a81d421168f42498b1ea9b401914cd917804*Sun Apr 6 22:19:56 2014 +0200*8 years ago
+ Apache-2.0-LICENSE.txt | 176 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 176 insertions(+)
+
+4d66fd00652794604f40b7ea5ed68f73a0a37815*Sun Apr 6 18:14:10 2014 +0200*8 years ago
+b2f0221350a5db799f368dabd677552d9465cbf1*Sun Apr 6 16:49:53 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/game/Game.java   | 9 ++++++---
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 4 ++--
+ 2 files changed, 8 insertions(+), 5 deletions(-)
+
+9afe00ee5321e5e3a6216c14c6663bdda62fd9fd*Sun Apr 6 16:49:05 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+e4ed6d2bf35fd344da0a1402faa92e69c4d79209*Sun Apr 6 16:48:37 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+
+47b6adf64bcc62bb19eaaea8a377adf39e85a733*Sun Apr 6 11:44:26 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+add7d9117df87d8c2e7c8a2f4171366e702f0407*Sat Apr 5 23:15:50 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 17 -----------------
+ 1 file changed, 17 deletions(-)
+
+cae37a15dc9d5255c636d521278eb11266b169ce*Sat Apr 5 15:13:51 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 18 ------------------
+ 1 file changed, 18 deletions(-)
+
+16fa5b14cd84c2124f91f0f055b27a043a52757f*Sat Apr 5 15:08:59 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+82294494e7b47d67bd4fa91695e77fc22013e692*Mon Mar 31 14:32:59 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+f0e942bce76a34caa9bdc7e1f5cad790dc99f26e*Mon Mar 31 14:31:01 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/board/Board.java | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+2ff83452e19f3165128745372631840692960156*Mon Mar 31 08:58:14 2014 +0200*8 years ago
+083d9fd3f3a6bea86273ea906c5a7c30226c99d1*Sun Mar 30 19:48:09 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+30b6ba967cb23335dcb18efb6bf2b00d17a3ac75*Sun Mar 30 19:44:55 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/PlayerCollisions.java | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 62 insertions(+)
+
+a49a23cb482bca960ca37b48ce6c8d619c37ba1c*Sun Mar 30 19:44:55 2014 +0200*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/DefaultPlayerInteractionMap.java | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                | 35 ++---------------------------------
+ 2 files changed, 58 insertions(+), 33 deletions(-)
+
+ec980b550a7ae3d39e1d3d802166331433aa1784*Mon Mar 17 13:28:56 2014 +0100*8 years ago
+167963c2b42f4ac6bfc3a6e07ab099a0c5645f19*Sun Mar 16 19:12:05 2014 +0100*8 years ago
+ doc/scenarios.md | 172 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 172 insertions(+)
+
+a98b252dbf49334da342cfacd287224312cbde99*Sun Mar 16 17:27:53 2014 +0100*8 years ago
+ src/test/java/nl/tudelft/jpacman/LauncherSmokeTest.java | 107 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 107 insertions(+)
+
+de87ac0ec6cd3631602b11251157ff8ae1c38eac*Sun Mar 16 16:55:16 2014 +0100*8 years ago
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+44d409eee948c291de75aad127005710e0959b20*Sun Mar 16 16:55:16 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+
+cd632fe81fdc12544449a6376084b82b3803bed0*Sun Mar 16 16:54:40 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
+d05fbcb2834e86d3f04e918043efcf19fb602390*Mon Mar 10 12:21:21 2014 +0100*8 years ago
+76f86138bf9a1896ad2f904c93e0e7229171214d*Mon Mar 10 12:20:34 2014 +0100*8 years ago
+b94cc5266d982628c096fe315e742f91ce7feef7*Mon Mar 10 12:19:56 2014 +0100*8 years ago
+feba1ca57cffb0fd5ccb67ce9868d5cc11f4e712*Mon Mar 10 12:19:34 2014 +0100*8 years ago
+d15d73e437d708721a5cb37f8302d34233e5310c*Sun Mar 9 22:37:08 2014 +0100*8 years ago
+ pom.xml | 17 +++++++++++++----
+ 1 file changed, 13 insertions(+), 4 deletions(-)
+
+89b7c4dac69b59ee2dc54edb804b99df4130f840*Sun Mar 9 22:35:44 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+6bd18f9c10adf2817d0bcd3003d6346b34c8f11a*Sun Mar 9 22:33:14 2014 +0100*8 years ago
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java | 73 +++++++++++++++++++++++++++----------------------------------------------
+ 1 file changed, 27 insertions(+), 46 deletions(-)
+
+5b3850999ba0bad56677b914ce725fcdc4b96ac9*Sun Mar 9 22:21:45 2014 +0100*8 years ago
+ .travis.yml | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+d3b13e3cad9c14cc5975660b878ca85d9818fc2d*Sun Mar 9 13:08:24 2014 +0100*8 years ago
+5fdc5ca14b9a02bda5ffc8ab7e10afeec636862a*Sat Mar 8 21:24:46 2014 +0100*8 years ago
+ .gitignore | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+a7d4ada3e8d2a54790c13996382f453a5b9c3287*Thu Feb 6 19:27:53 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+1d9cdb4a2d90a70acbbbaef4532df007e6a232e5*Wed Feb 5 17:17:02 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/game/GameFactory.java      | 7 +++++++
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java           | 2 +-
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java    | 2 +-
+ 4 files changed, 10 insertions(+), 3 deletions(-)
+
+7f70758c0f1b53adef44599165bc456f0a11fdf5*Wed Feb 5 16:37:45 2014 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+6f3d46d8fe036933f459e90f54656da3741ac068*Wed Nov 13 23:23:50 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java     | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java      | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java       | 2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 4 ++--
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java      | 2 +-
+ 5 files changed, 6 insertions(+), 6 deletions(-)
+
+5495654265ae7cf8003bbf5ee7e531771e98f7f4*Wed Nov 13 14:15:15 2013 -0800*8 years ago
+93a02710ffd1a80ee6be4b60b9018d22e4dacd79*Wed Nov 13 21:29:11 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java     | 23 +++++++++++++----------
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 10 ++++++++++
+ 2 files changed, 23 insertions(+), 10 deletions(-)
+
+326e6df55856327e5a8b6fcfbb114c324d108c44*Wed Nov 13 15:21:34 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java     | 27 ++++++++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java      | 26 +++++++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java       | 46 +++++++++++++++++++++++++++++-----------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java | 21 ++++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java      | 41 +++++++++++++++++++++++++----------------
+ src/main/resources/logback.xml                             | 12 ++++++++++--
+ 6 files changed, 115 insertions(+), 58 deletions(-)
+
+2dd20fa0aa9f221b73ceb01881867ac46e8ea38e*Wed Nov 13 15:21:04 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                 | 116 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Square.java             |   2 +-
+ src/main/java/nl/tudelft/jpacman/board/Unit.java               |   2 +-
+ src/main/java/nl/tudelft/jpacman/game/GameFactory.java         |  39 +++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java    |   2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java              |  34 ++++++++++++++++++++++++++++++----
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java       |  32 ++++++++++++++++++--------------
+ src/main/java/nl/tudelft/jpacman/level/Player.java             |   2 +-
+ src/main/java/nl/tudelft/jpacman/level/PlayerFactory.java      |  36 ++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/GhostFactory.java   |  65 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java |  18 +++++++++++-------
+ 11 files changed, 286 insertions(+), 62 deletions(-)
+
+949a973073d01b21d7144ad7bc83981b789bb8e2*Wed Nov 13 13:31:05 2013 +0100*8 years ago
+ pom.xml                                                          |  5 +++++
+ src/main/java/nl/tudelft/jpacman/level/Level.java                | 35 ++++++++++++++++++++++++++++++-----
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java         | 34 +++++++++++++++++-----------------
+ src/main/java/nl/tudelft/jpacman/npc/Ghost.java                  | 32 --------------------------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java           | 44 ++++++++++++++++++++++++++++++++++++++------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java            | 54 ++++++++++++++++++++++++++++++++++++++++++++++--------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Ghost.java            | 69 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/{ => ghost}/GhostColor.java |  2 +-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java             | 70 +++++++++++++++++++++++++++++++++++++++++++++++++++++++---------------
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java            | 55 +++++++++++++++++++++++++++++++++++++++++++------------
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java       |  2 +-
+ src/main/resources/logback.xml                                   | 12 ++++++++++++
+ 12 files changed, 317 insertions(+), 97 deletions(-)
+
+cf70c34265d1d12d186f84b7897f41b640c599fe*Tue Nov 12 18:21:14 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/level/Level.java              |  68 ++++++++++++++++++++++++++++++++++++++++++++++++--------------------
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java       |  25 ++++++++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Blinky.java         |  87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Clyde.java          | 100 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Inky.java           | 119 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Navigation.java     | 196 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/Pinky.java          |  99 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/ghost/package-info.java   |  18 ++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/npc/ghost/NavigationTest.java | 141 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 9 files changed, 832 insertions(+), 21 deletions(-)
+
+6ce02f0ca4e06c309ac377249d5fff0f479aee26*Tue Nov 12 14:41:21 2013 +0100*8 years ago
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+5912aa2893c25fe602c239c015be65a7c3fced4c*Tue Nov 12 14:38:19 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                                    |   2 +-
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                                  |  12 ++++++++++++
+ src/main/java/nl/tudelft/jpacman/game/Game.java                                   |  15 ++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java                       |   1 +
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java               |   2 +-
+ src/main/java/nl/tudelft/jpacman/level/{CollisionTable.java => CollisionMap.java} |   2 +-
+ src/main/java/nl/tudelft/jpacman/level/Level.java                                 | 122 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java                          |  65 +++++++++++++++++++++++++++++++++++++++++++++++++----------------
+ src/main/java/nl/tudelft/jpacman/{game => level}/Player.java                      |  31 +++++++++++++++++++++++--------
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java                               |   2 +-
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java                             |   1 -
+ 11 files changed, 216 insertions(+), 39 deletions(-)
+
+95af86340886ff23fa90dae0f622047aa27dbed9*Tue Nov 12 13:31:16 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java              | 27 +--------------------------
+ src/main/java/nl/tudelft/jpacman/game/Player.java           | 55 ++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java |  1 +
+ src/main/java/nl/tudelft/jpacman/level/Level.java           |  1 +
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java    | 15 +++------------
+ src/main/java/nl/tudelft/jpacman/npc/Ghost.java             | 32 ++++++++++++++++++++++++++++++++
+ 6 files changed, 88 insertions(+), 43 deletions(-)
+
+f48453be29c22116484c96a3d154b0c161cd93b0*Mon Nov 11 18:38:45 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java           |  57 ++++++++-------------------------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Unit.java         |  28 ++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/LevelFactory.java | 119 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/MapParser.java    | 173 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/Pellet.java       |  45 +++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java            |  23 ++---------------------
+ src/main/resources/board.txt                             |  21 +++++++++++++++++++++
+ 7 files changed, 396 insertions(+), 70 deletions(-)
+
+08045ccb2bdefa9bcfa281da897123eb5185cab6*Mon Nov 11 18:37:54 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java   | 12 ++++++------
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java |  5 +++--
+ 2 files changed, 9 insertions(+), 8 deletions(-)
+
+eae6d34f31d5494d96c7b5f9c796db18d6539f0f*Mon Nov 11 17:38:51 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/npc/Strategy.java           | 28 ----------------------------
+ src/test/java/nl/tudelft/jpacman/board/BoardFactoryTest.java | 96 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 96 insertions(+), 28 deletions(-)
+
+4ee3a3f31bd310150c56ba85f4f81392bd1caa04*Mon Nov 11 16:53:54 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java             |   6 +++++-
+ src/main/java/nl/tudelft/jpacman/board/Board.java          |   2 +-
+ src/main/java/nl/tudelft/jpacman/board/BoardFactory.java   | 143 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java |   7 +++++++
+ 4 files changed, 156 insertions(+), 2 deletions(-)
+
+9fb5826370fae570885da0fc69478775b38b5949*Mon Nov 11 16:28:37 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java        | 49 ++++++++++++-------------------------------------
+ src/main/java/nl/tudelft/jpacman/board/Board.java     | 41 ++++++++++++++++++++++++++++++++++-------
+ src/test/java/nl/tudelft/jpacman/board/BoardTest.java | 76 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 122 insertions(+), 44 deletions(-)
+
+13dce7141f3e2e675c48165d8588aa1011b2c44d*Mon Nov 11 16:01:35 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/board/Square.java       | 102 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ src/main/java/nl/tudelft/jpacman/board/Unit.java         |  48 +++++++++++++++++++++++++++++++++++++++---------
+ src/main/java/nl/tudelft/jpacman/game/Player.java        |  36 ++++++++++++++++++++++++++++++++++--
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java            |   2 +-
+ src/test/java/nl/tudelft/jpacman/board/BasicSquare.java  |  28 ++++++++++++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/board/BasicUnit.java    |  23 +++++++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/board/OccupantTest.java |  49 +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/java/nl/tudelft/jpacman/board/SquareTest.java   |  68 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 335 insertions(+), 21 deletions(-)
+
+3e8c411312d21c8b437c5e50d77342e362466f8e*Mon Nov 11 15:31:35 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+
+59abc2d7085074c928f22417e97ebd0ea9ab84cc*Mon Nov 11 15:30:50 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                      |  44 ++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/board/Board.java                   |  20 +++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/board/Direction.java               |  75 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ src/main/java/nl/tudelft/jpacman/board/Square.java                  |  40 ++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/board/Unit.java                    |  27 ++++++++++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/game/Game.java                     |   2 +-
+ src/main/java/nl/tudelft/jpacman/level/CollisionInteractionMap.java | 246 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/CollisionTable.java          |  26 ++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/level/Level.java                   |  33 ++++++++++++++++++++++-----------
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java                 |   6 +++---
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java               |   7 ++-----
+ 11 files changed, 496 insertions(+), 30 deletions(-)
+
+6d7c14da4fbda6d321afc89575d6d4438c769b7f*Mon Nov 11 13:40:04 2013 +0100*8 years ago
+ pom.xml                                               |   5 +++++
+ src/main/java/nl/tudelft/jpacman/Launcher.java        |   6 ++++++
+ src/main/java/nl/tudelft/jpacman/board/Unit.java      |   2 ++
+ src/main/java/nl/tudelft/jpacman/level/Level.java     |  16 +++++++++++-----
+ src/test/java/nl/tudelft/jpacman/level/LevelTest.java | 150 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 5 files changed, 174 insertions(+), 5 deletions(-)
+
+7f48a447e6354fe8795dc084d9b6e77e08023d5b*Mon Nov 11 13:08:11 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java                 |  11 ++++++++++-
+ src/main/java/nl/tudelft/jpacman/level/Level.java              | 201 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---------
+ src/main/java/nl/tudelft/jpacman/{game => npc}/GhostColor.java |   2 +-
+ src/main/java/nl/tudelft/jpacman/npc/NPC.java                  |  48 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/npc/Strategy.java             |  28 ++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java     |   2 +-
+ 6 files changed, 280 insertions(+), 12 deletions(-)
+
+7a108072bb525086f1fb410d7ed3f9907e4fa27f*Mon Nov 11 12:31:27 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java              | 10 ++--------
+ src/main/java/nl/tudelft/jpacman/game/Game.java             | 57 +++++++++++++++++++++++++++++++++++++++++++++++++--------
+ src/main/java/nl/tudelft/jpacman/game/Level.java            |  9 ---------
+ src/main/java/nl/tudelft/jpacman/game/Player.java           |  4 +++-
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java | 30 ++----------------------------
+ src/main/java/nl/tudelft/jpacman/level/Level.java           | 35 +++++++++++++++++++++++++++++++++++
+ 6 files changed, 91 insertions(+), 54 deletions(-)
+
+c0e014dbef175e42df6e8298985dffa8061700fd*Fri Nov 8 14:24:54 2013 +0100*8 years ago
+ pom.xml                                                     |   5 +++++
+ src/main/java/nl/tudelft/jpacman/Launcher.java              |  52 +++++++++++++---------------------------------------
+ src/main/java/nl/tudelft/jpacman/game/Game.java             |   2 +-
+ src/main/java/nl/tudelft/jpacman/game/SinglePlayerGame.java | 107 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 126 insertions(+), 40 deletions(-)
+
+698ac7d6721b21f3837a151e0a459592c3557314*Fri Nov 8 13:33:22 2013 +0100*8 years ago
+ pom.xml                                                  |   7 +++++++
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java |  19 +++++++++++--------
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java |  13 +++++++++----
+ src/test/java/nl/tudelft/jpacman/sprite/SpriteTest.java  | 127 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/test/resources/sprite/64x64white.png                 | Bin 0 -> 195 bytes
+ 5 files changed, 154 insertions(+), 12 deletions(-)
+
+ae0d89cd5609b1cd291663626bc56ccb9fb53d9e*Fri Nov 8 12:54:22 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/game/GhostColor.java       |  24 ++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/AnimatedSprite.java | 160 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/EmptySprite.java    |  33 +++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/ImageSprite.java    |  78 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/PacManSprites.java  | 133 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/sprite/Sprite.java         |  32 +++++++++++++++++++++++++++++++-
+ src/main/java/nl/tudelft/jpacman/sprite/SpriteStore.java    |  59 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/resources/sprite/apple.png                         | Bin 0 -> 264 bytes
+ src/main/resources/sprite/bell.png                          | Bin 0 -> 257 bytes
+ src/main/resources/sprite/cherry.png                        | Bin 0 -> 288 bytes
+ src/main/resources/sprite/dead.png                          | Bin 0 -> 549 bytes
+ src/main/resources/sprite/floor.png                         | Bin 0 -> 124 bytes
+ src/main/resources/sprite/galboss.png                       | Bin 0 -> 268 bytes
+ src/main/resources/sprite/ghost_cyan.png                    | Bin 0 -> 716 bytes
+ src/main/resources/sprite/ghost_eyes.png                    | Bin 0 -> 412 bytes
+ src/main/resources/sprite/ghost_orange.png                  | Bin 0 -> 717 bytes
+ src/main/resources/sprite/ghost_pink.png                    | Bin 0 -> 691 bytes
+ src/main/resources/sprite/ghost_red.png                     | Bin 0 -> 704 bytes
+ src/main/resources/sprite/ghost_vul_blue.png                | Bin 0 -> 794 bytes
+ src/main/resources/sprite/ghost_vul_white.png               | Bin 0 -> 717 bytes
+ src/main/resources/sprite/key.png                           | Bin 0 -> 263 bytes
+ src/main/resources/sprite/melon.png                         | Bin 0 -> 292 bytes
+ src/main/resources/sprite/mspacman.png                      | Bin 0 -> 1300 bytes
+ src/main/resources/sprite/orange.png                        | Bin 0 -> 261 bytes
+ src/main/resources/sprite/pacman.png                        | Bin 0 -> 1104 bytes
+ src/main/resources/sprite/pellet.png                        | Bin 0 -> 219 bytes
+ src/main/resources/sprite/strawberry.png                    | Bin 0 -> 280 bytes
+ src/main/resources/sprite/wall.png                          | Bin 0 -> 139 bytes
+ 28 files changed, 518 insertions(+), 1 deletion(-)
+
+093c4b6015a0a25d5860175c7e4b7cb82cf38145*Fri Nov 8 12:34:48 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java        | 51 +++++++++++++++++++++++++++++++++++++++++++++------
+ src/main/java/nl/tudelft/jpacman/board/Direction.java | 13 +++++++++++++
+ src/main/java/nl/tudelft/jpacman/game/Game.java       | 12 ++++++++++++
+ 3 files changed, 70 insertions(+), 6 deletions(-)
+
+7644b8ae7d31249ac68d4b0cef9d7aa9973a5396*Thu Nov 7 18:05:11 2013 +0100*8 years ago
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+15c4b1f7753cd251af49fd5ca7095df80829b95c*Thu Nov 7 18:04:47 2013 +0100*8 years ago
+ src/main/java/nl/tudelft/jpacman/Launcher.java           |  94 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/board/Board.java        |  12 ++++++++++++
+ src/main/java/nl/tudelft/jpacman/board/Square.java       |   9 +++++++++
+ src/main/java/nl/tudelft/jpacman/board/Unit.java         |   9 +++++++++
+ src/main/java/nl/tudelft/jpacman/game/Game.java          |  36 ++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/game/Level.java         |   9 +++++++++
+ src/main/java/nl/tudelft/jpacman/game/Player.java        |   7 +++++++
+ src/main/java/nl/tudelft/jpacman/sprite/Sprite.java      |  27 +++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/Action.java          |  14 ++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/BoardPanel.java      | 121 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/ButtonPanel.java     |  46 ++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/PacKeyListener.java  |  46 ++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/PacManUI.java        | 118 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/PacManUiBuilder.java | 149 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/main/java/nl/tudelft/jpacman/ui/ScorePanel.java      |  63 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 15 files changed, 760 insertions(+)
+
+7a9bb68fcfa09e6507b70fbe7418d48900660773*Thu Nov 7 16:08:30 2013 +0100*8 years ago
+ .gitignore | 10 ++++++++++
+ pom.xml    | 22 ++++++++++++++++++++++
+ 2 files changed, 32 insertions(+)
+
+1185f2b770024ce65ec19b8258faaed057acdde5*Thu Nov 7 06:56:09 2013 -0800*8 years ago
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)

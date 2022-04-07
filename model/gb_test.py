@@ -1,0 +1,153 @@
+import json
+import os
+from numpy import *
+import numpy as np
+import numpy as np
+import pandas as pd
+from sklearn.ensemble import GradientBoostingRegressor,GradientBoostingClassifier
+import matplotlib.pyplot as plt
+
+
+# 读取json，并获取特征
+def read_json(filename):
+    global positive_num, negative_num
+    # print(filename)
+    with open(filename, 'r', encoding='utf8') as fp:
+        json_data = json.load(fp)
+        add_annotation_line = json_data['add_annotation_line']
+        add_call_line = json_data['add_call_line']
+        add_classname_line = json_data['add_classname_line']
+        add_condition_line = json_data['add_condition_line']
+        add_field_line = json_data['add_field_line']
+        add_import_line = json_data['add_import_line']
+        add_packageid_line = json_data['add_packageid_line']
+        add_parameter_line = json_data['add_parameter_line']
+        add_return_line = json_data['add_return_line']
+        del_annotation_line = json_data['del_annotation_line']
+        del_call_line = json_data['del_call_line']
+        del_classname_line = json_data['del_classname_line']
+        del_condition_line = json_data['del_condition_line']
+        del_field_line = json_data['del_field_line']
+        del_import_line = json_data['del_import_line']
+        del_packageid_line = json_data['del_packageid_line']
+        del_parameter_line = json_data['del_parameter_line']
+        del_return_line = json_data['del_return_line']
+        # print(type(del_return_line))
+        feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
+                   add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
+                   del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
+                   del_packageid_line, del_parameter_line, del_return_line]
+        # features_np = np.asarray(features, dtype=float)
+        # print(json_data['prod_typ'])
+        features.append(feature)
+        if json_data['sample_type'] == "POSITIVE":
+            positive_num += 1
+            target.append(1)
+        else:
+            negative_num += 1
+            target.append(0)
+        # target.append(1 if json_data['sample_type'] == "POSITIVE" else 0)
+        return features
+
+
+pres = []  # 精度
+recalls = []  # 回召
+
+# 计算指标
+features = []
+target = []
+positive_num = 0
+negative_num = 0
+
+# print('=======', num)
+for dir in os.listdir('../experiment_data'):
+    for file in os.listdir('../experiment_data/' + dir):
+        read_json('../experiment_data/' + dir + '/' + file)
+    # 打印正负样本数量
+print('positive', positive_num)
+print('negative', negative_num)
+# 测试集和训练集 0.1-0.9
+features_np = np.asarray(features, dtype=float)
+target_np = np.asarray(target, dtype=float)
+is_train = np.random.uniform(0, 1, len(target)) <= .9
+# print(is_train)
+train = features_np[is_train == True]
+train_target = target_np[is_train == True]
+test = features_np[is_train == False]
+test_target = target_np[is_train == False]
+# print(len(train))
+# print(len(train_target))
+# print(len(test))
+# print(len(test_target))
+for num in range(0, 50):
+    TP = 0
+    FP = 0
+    FN = 0
+    TN = 0
+    threshold = num / 49
+    print('======', threshold)
+    for i in range(1):
+        per_pre = []
+        per_recall = []
+        gbdt = GradientBoostingClassifier(
+            # loss='ls'
+            # , learning_rate=0.1
+            # , n_estimators=100
+            # , subsample=1
+            # , min_samples_split=2
+            # , min_samples_leaf=1
+            # , max_depth=3
+            # , init=None
+            # , random_state=None
+            # , max_features=None
+            # , alpha=0.9
+            # , verbose=0
+            # , max_leaf_nodes=None
+            # , warm_start=False
+        )
+        gbdt = gbdt.fit(train, train_target)
+        predict = gbdt.predict(test)
+        print(predict)
+        print('max', max(predict))
+        print('min', min(predict))
+        min_pre = min(predict)
+        max_pre = max(predict)
+        for i in range(len(predict)):
+            # 归一化处理
+            predict[i] = (predict[i] - min_pre) / (max_pre - min_pre)
+            if predict[i] >= threshold:
+                if test_target[i] == 1:
+                    TP += 1
+                else:
+                    FP += 1
+            else:
+                if test_target[i] == 1:
+                    FN += 1
+                else:
+                    TN += 1
+
+        print('max', max(predict))
+        print('min', min(predict))
+        print('TP', TP)
+        print('FP', FP)
+        print('FN', FN)
+        print('TN', TN)
+        print('Precision', TP / (TP + FP))
+        print('Recall', TP / (TP + FN))
+        per_pre.append(TP / (TP + FP))
+        per_recall.append(TP / (TP + FN))
+    pres.append(mean(per_pre))
+    recalls.append(mean(per_recall))
+
+# print("===pres===")
+# print('mean', mean(pres))
+# print('max', max(pres))
+# print('min', min(pres))
+# print("===recalls===")
+# print('mean', mean(recalls))
+# print('max', max(recalls))
+# print('min', min(recalls))
+print(recalls)
+print(pres)
+plt.plot(recalls, pres)
+plt.show()
