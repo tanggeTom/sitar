@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 
 
 # 读取json，并获取特征
+from sklearn.model_selection import train_test_split
+
+
 def read_json(filename):
     global positive_num, negative_num
     # print(filename)
@@ -34,12 +37,24 @@ def read_json(filename):
         del_parameter_line = json_data['del_parameter_line']
         del_return_line = json_data['del_return_line']
         # print(type(del_return_line))
+        insert_num = 0 if not json_data.get('insert') else json_data["insert"]
+        update_num = 0 if not json_data.get('update') else json_data["update"]
+        move_num = 0 if not json_data.get('move') else json_data["move"]
+        delete_num = 0 if not json_data.get('delete') else json_data["delete"]
+        clusters_num = 0
+        if insert_num != 0:
+            clusters_num += 1
+        if update_num != 0:
+            clusters_num += 1
+        if move_num != 0:
+            clusters_num += 1
+        if delete_num != 0:
+            clusters_num += 1
+        actions_num = delete_num + move_num + update_num + insert_num
         feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
                    add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
                    del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
-                   del_packageid_line, del_parameter_line, del_return_line]
-        # features_np = np.asarray(features, dtype=float)
-        # print(json_data['prod_typ'])
+                   del_packageid_line, del_parameter_line, del_return_line,insert_num,update_num,move_num,delete_num,clusters_num,actions_num]
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
             positive_num += 1
@@ -67,16 +82,8 @@ print('negative', negative_num)
 # 测试集和训练集 0.1-0.9
 features_np = np.asarray(features, dtype=float)
 target = np.asarray(target, dtype=float)
-is_train = np.random.uniform(0, 1, len(target)) <= .9
-# print(is_train)
-train = features_np[is_train == True]
-train_target = target[is_train == True]
-test = features_np[is_train == False]
-test_target = target[is_train == False]
-# print(len(train))
-# print(len(train_target))
-# print(len(test))
-# print(len(test_target))
+x_train, x_test, y_train, y_test = train_test_split(features_np, target, test_size = 0.1,random_state=1)
+
 for num in range(0, 50):
     threshold = num / 49
     print('======', threshold)
@@ -86,16 +93,16 @@ for num in range(0, 50):
     FN = 0
     TN = 0
     rgs = RandomForestRegressor()  ##随机森林模型
-    rgs = rgs.fit(train, train_target)
-    predict = rgs.predict(test)
+    rgs = rgs.fit(x_train,y_train)
+    predict = rgs.predict(x_test)
     for i in range(len(predict)):
         if predict[i] >= threshold:
-            if test_target[i] == 1:
+            if y_test[i] == 1:
                 TP += 1
             else:
                 FP += 1
         else:
-            if test_target[i] == 1:
+            if y_test[i] == 1:
                 FN += 1
             else:
                 TN += 1
@@ -109,14 +116,6 @@ for num in range(0, 50):
     recalls.append(TP / (TP + FN))
     print('max', max(predict))
     print('min', min(predict))
-# print("===pres===")
-# print('mean', mean(pres))
-# print('max', max(pres))
-# print('min', min(pres))
-# print("===recalls===")
-# print('mean', mean(recalls))
-# print('max', max(recalls))
-# print('min', min(recalls))
 print(recalls)
 print(pres)
 plt.plot(recalls, pres)

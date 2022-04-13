@@ -4,10 +4,9 @@ from numpy import *
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing
-from sklearn.ensemble import RandomForestRegressor,RandomForestClassifier
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 from sklearn.datasets import load_boston
 import matplotlib.pyplot as plt
-
 
 # 读取json，并获取特征
 from sklearn.metrics import classification_report
@@ -36,26 +35,48 @@ def read_json(filename):
         del_packageid_line = json_data['del_packageid_line']
         del_parameter_line = json_data['del_parameter_line']
         del_return_line = json_data['del_return_line']
-        # print(type(del_return_line))
+        insert_num = 0 if not json_data.get('insert') else json_data["insert"]
+        update_num = 0 if not json_data.get('update') else json_data["update"]
+        move_num = 0 if not json_data.get('move') else json_data["move"]
+        delete_num = 0 if not json_data.get('delete') else json_data["delete"]
+        clusters_num = 0
+        if insert_num != 0:
+            clusters_num += 1
+        if update_num != 0:
+            clusters_num += 1
+        if move_num != 0:
+            clusters_num += 1
+        if delete_num != 0:
+            clusters_num += 1
+
+        actions_num = delete_num + move_num + update_num + insert_num
+
         feature = [
-            add_parameter_line,
+            delete_num,
             add_call_line,
-            del_call_line,
-            add_import_line,
-            del_import_line,
-            add_packageid_line,
-            add_return_line,
             del_packageid_line,
+            del_import_line,
             del_parameter_line,
-            add_condition_line,
+            add_parameter_line,
+            del_call_line,
             add_field_line,
-            add_classname_line,
-            del_return_line,
+            del_classname_line,
+            clusters_num,
+            add_packageid_line,
+            actions_num,
+            update_num,
+            move_num,
             del_condition_line,
             del_field_line,
-            add_annotation_line,
-            del_classname_line,
             del_annotation_line,
+            del_return_line,
+            add_condition_line,
+            add_return_line,
+            add_import_line,
+            add_classname_line,
+            insert_num,
+            add_annotation_line,
+
         ]
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
@@ -128,42 +149,49 @@ print()
 pre_accs = []
 post_accs = []
 features_name = [
-"AL",
-"AM",
-"DM",
-"AI",
-"DI",
-"AP",
-"AR",
-"DP",
-"DL",
-"AD",
-"AF",
-"AC",
-"DR",
-"DD",
-"DF",
-"AA",
-"DC",
-"DA",
+    "GD",
+    "AM",
+    "DP",
+    "DI",
+    "DL",
+    "AL",
+    "DM",
+    "AF",
+    "DC",
+    "GC",
+    "AP",
+    "GA",
+    "GU",
+    "GM",
+    "DD",
+    "DF",
+    "DA",
+    "DR",
+    "AD",
+    "AR",
+    "AI",
+    "AC",
+    "GI",
+    "AA"
 ]
-#prefix
-for i in range(18):
+# prefix
+for i in range(24):
     rfc = RandomForestClassifier()
-    print(train[:,:i+1])
-    rfc.fit(train[:,:i+1],train_target)
-    predict = rfc.predict(test[:,:i+1])
-    res = classification_report(test_target, predict ,output_dict=True)
+    print(train[:, :i + 1])
+    rfc.fit(train[:, :i + 1], train_target)
+    predict = rfc.predict(test[:, :i + 1])
+    res = classification_report(test_target, predict, output_dict=True)
     pre_accs.append(res['accuracy'])
-#postfix
+# postfix
 print('========postfix========')
-for i in range(18):
+for i in range(24):
     rfc = RandomForestClassifier()
-    print(train[:,i:])
-    rfc.fit(train[:,i:],train_target)
-    predict = rfc.predict(test[:,i:])
-    res = classification_report(test_target, predict ,output_dict=True)
+    print(train[:, i:])
+    rfc.fit(train[:, i:], train_target)
+    predict = rfc.predict(test[:, i:])
+    res = classification_report(test_target, predict, output_dict=True)
     post_accs.append(res['accuracy'])
 plt.plot(features_name, pre_accs)
 plt.plot(features_name, post_accs)
+plt.legend(['prefix',"postfix"])
 plt.show()

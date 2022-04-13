@@ -6,7 +6,7 @@ import git
 from shutil import copyfile
 import json
 
-project_name = 'dnsjava'  # 只需要修改此处
+project_name = 'jruby'  # 只需要修改此处
 repo_name = 'D:\\BaiduNetdiskDownload\\commit\\' + project_name
 repo = git.Repo(repo_name)
 commits = repo.iter_commits('master')

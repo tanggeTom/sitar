@@ -57,7 +57,7 @@ def read_json(filename):
         feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
                    add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
                    del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
-                   del_packageid_line, del_parameter_line, del_return_line,insert_num,update_num,move_num,delete_num,clusters_num,actions_num]
+                   del_packageid_line, del_parameter_line, del_return_line]
 
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
@@ -85,7 +85,8 @@ negative_num = 0
 project_recalls = []
 project_accs = []
 project_precs = []
-projects = ['storm','usergrid','flink']
+# projects = ['storm','usergrid','flink']
+projects = ['activemq', 'commons-math','zeppelin','flink','cloudstack', 'logging-log4j2','storm','usergrid','james-project','geode']
 for project in projects:
     # positive_num = 0
     # negative_num = 0

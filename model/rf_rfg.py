@@ -36,11 +36,27 @@ def read_json(filename):
         del_packageid_line = json_data['del_packageid_line']
         del_parameter_line = json_data['del_parameter_line']
         del_return_line = json_data['del_return_line']
+        insert_num = 0 if not json_data.get('insert') else json_data["insert"]
+        update_num = 0 if not json_data.get('update') else json_data["update"]
+        move_num = 0 if not json_data.get('move') else json_data["move"]
+        delete_num = 0 if not json_data.get('delete') else json_data["delete"]
+        clusters_num = 0
+        if insert_num != 0:
+            clusters_num += 1
+        if update_num != 0:
+            clusters_num += 1
+        if move_num != 0:
+            clusters_num += 1
+        if delete_num != 0:
+            clusters_num += 1
+        create_delete = 0
+        actions_num = delete_num + move_num + update_num + insert_num
         # print(type(del_return_line))
         feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
                    add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
                    del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
-                   del_packageid_line, del_parameter_line, del_return_line]
+                   del_packageid_line, del_parameter_line, del_return_line, insert_num, update_num, move_num,
+                   delete_num, clusters_num, actions_num]
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
             positive_num += 1
@@ -57,7 +73,7 @@ negative_num = 0
 project_recalls = []
 project_accs = []
 project_precs = []
-projects = ['cloudstack', 'flink', 'geode', 'storm', 'usergrid', 'jpacman-framework', 'biojava', 'dnsjava']
+projects = ['activemq', 'commons-math','zeppelin','flink','cloudstack', 'logging-log4j2','storm','usergrid','james-project','geode']
 positive_num = 0
 negative_num = 0
 first = True
@@ -85,11 +101,19 @@ target_np = np.asarray(target, dtype=float)
 #         test_target = np.append(test_target, np.array(target)[is_train == False], axis=0)
 # print('positive', positive_num)  # 打印正负样本数量
 # print('negative', negative_num)
-rfc = RandomForestClassifier()
+rfc = RandomForestClassifier(random_state=1)
+feature_name = ["add_annotation_line", "add_call_line", "add_classname_line", "add_condition_line", "add_field_line",
+                "add_import_line", "add_packageid_line", "add_parameter_line", "add_return_line", "del_annotation_line",
+                "del_call_line", "del_classname_line", "del_condition_line", "del_field_line", "del_import_line",
+                "del_packageid_line", "del_parameter_line", "del_return_line", "insert_num", "update_num", "move_num",
+                "delete_num", "clusters_num", "actions_num"]
 # 递归特征消除
 rfe = RFE(estimator=rfc, n_features_to_select=1, step=1)
 rfe.fit(features_np, target_np)
-print(rfe.ranking_)
+ranks = rfe.ranking_
+print(ranks)
+for i in ranks:
+    print(feature_name[i-1])
 # #下采样处理
 # rus = RandomUnderSampler(random_state=0)
 # features_np, target_np = rus.fit_resample(features_np, target_np)

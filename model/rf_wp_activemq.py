@@ -61,20 +61,13 @@ def read_json(filename):
         if delete_num != 0:
             clusters_num += 1
         create_delete = 0
-        actions_num = delete_num+move_num+update_num+insert_num
-        if prod_typ == "DELETE":
-            create_delete = -1
-        elif prod_typ == "CREATE":
-            create_delete = 1
-        add_total = add_annotation_line + add_call_line + add_classname_line + add_condition_line + add_field_line + add_import_line + add_packageid_line + add_parameter_line + add_return_line
-        del_total = del_call_line + del_annotation_line + del_classname_line + del_condition_line + del_field_line + del_import_line + del_packageid_line + del_parameter_line + del_return_line
+        actions_num = delete_num + move_num + update_num + insert_num
+        # add_total = add_annotation_line + add_call_line + add_classname_line + add_condition_line + add_field_line + add_import_line + add_packageid_line + add_parameter_line + add_return_line
+        # del_total = del_call_line + del_annotation_line + del_classname_line + del_condition_line + del_field_line + del_import_line + del_packageid_line + del_parameter_line + del_return_line
         # create_delete =
         # print(type(del_return_line))
-        feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
-                   add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
-                   del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
-                   del_packageid_line, del_parameter_line, del_return_line,insert_num,update_num,move_num,delete_num,clusters_num,actions_num]
-
+        feature = [ insert_num, update_num, move_num,
+                   delete_num, clusters_num, actions_num]
 
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
@@ -92,20 +85,23 @@ negative_num = 0
 project_recalls = []
 project_accs = []
 project_precs = []
+project_f1s = []
 # feature_name = ["add_annotation_line", "add_call_line", "add_classname_line", "add_condition_line", "add_field_line",
 #                    "add_import_line", "add_packageid_line", "add_parameter_line", "add_return_line", "del_annotation_line",
 #                    "del_call_line", "del_classname_line", "del_condition_line", "del_field_line", "del_import_line",
 #                    "del_packageid_line", "del_parameter_line", "del_return_line"]
 feature_name = ["add_annotation_line", "add_call_line", "add_classname_line", "add_condition_line", "add_field_line",
-                   "add_import_line", "add_packageid_line", "add_parameter_line", "add_return_line", "del_annotation_line",
-                   "del_call_line", "del_classname_line", "del_condition_line", "del_field_line", "del_import_line",
-                   "del_packageid_line", "del_parameter_line", "del_return_line","insert_num","update_num","move_num","delete_num","clusters_num","actions_num"]
+                "add_import_line", "add_packageid_line", "add_parameter_line", "add_return_line", "del_annotation_line",
+                "del_call_line", "del_classname_line", "del_condition_line", "del_field_line", "del_import_line",
+                "del_packageid_line", "del_parameter_line", "del_return_line", "insert_num", "update_num", "move_num",
+                "delete_num", "clusters_num", "actions_num"]
 # projects = ['activemq', 'cloudstack', 'commons-math', 'flink', 'geode', 'james-project', 'logging-log4j2', 'storm',
 #        'usergrid', 'zeppelin',
 #        'jpacman-framework', 'gson', 'pmd', 'biojava', 'izpack', 'joda-time', 'dnsjava', 'jackson-core',
 #        'jruby', 'jsoup']
 # projects = ['activemq', 'cloudstack', 'commons-math', 'flink', 'geode', 'james-project', 'logging-log4j2', 'storm','usergrid', 'zeppelin']
 projects = ['activemq', 'commons-math','zeppelin','flink','cloudstack', 'logging-log4j2','storm','usergrid','james-project','geode']
+# projects = [ 'pmd', 'biojava','jsoup','jruby']
 for project in projects:
     positive_num = 0
     negative_num = 0
@@ -151,8 +147,9 @@ for project in projects:
         per_pre = []
         per_recall = []
         per_acc = []
+        per_f1 = []
         gbdt = RandomForestClassifier(random_state=1)
-        #特征重要度
+        # 特征重要度
         gbdt2 = gbdt.fit(train, train_target)
         importances = gbdt.feature_importances_
         indices = np.argsort(importances)[::-1]
@@ -190,20 +187,26 @@ for project in projects:
         # print('Precision', TP / (TP + FP))
         # print('Recall', TP / (TP + FN))
         # print('Acc', (TP + TN) / len(predict))
+        precision = TP / (TP + FP)
+        recall = TP / (TP + FN)
         per_acc.append((TP + TN) / len(predict))
-        per_pre.append(TP / (TP + FP))
-        per_recall.append(TP / (TP + FN))
+        per_pre.append(precision)
+        per_recall.append(recall)
+        per_f1.append(2 * precision * recall / (precision + recall))
     project_accs.append(mean(per_acc))
     project_precs.append(mean(per_pre))
     project_recalls.append(mean(per_recall))
+    project_f1s.append(mean(per_f1))
     print('mean_recall', mean(per_recall))
     print('mean_pre', mean(per_pre))
     print('mean_acc', mean(per_acc))
+    print('mean_f1', mean(per_f1))
     print(classification_report(test_target, predict))
 projects.append('Avg')
 project_accs.append(mean(project_accs))
 project_recalls.append(mean(project_recalls))
 project_precs.append(mean(project_precs))
-dict = {'Project': projects, 'Acc': project_accs, 'Prec': project_precs, 'Rec': project_recalls}
+project_f1s.append(mean(project_f1s))
+dict = {'Project': projects, 'Acc': project_accs, 'Prec': project_precs, 'Rec': project_recalls,'F1':project_f1s}
 df = pd.DataFrame(dict)
 print(df)

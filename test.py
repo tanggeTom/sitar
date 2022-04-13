@@ -185,7 +185,7 @@ def transfer_path(path: str):
         return path
 
 
-# git log --stat=500 --pretty=format:"%H*%cd*%ar" --date-order > logs_dubbo.txt
+# git logs --stat=500 --pretty=format:"%H*%cd*%ar" --date-order > logs_dubbo.txt
 # dir_set = set()
 # dir_list = ['dubbo-cluster','dubbo-common','dubbo-remoting','dubbo-rpc','dubbo-registry','dubbo-cluster','dubbo-compatible','dubbo-config','dubbo-configcenter','dubbo-container-spring','']
 name = "logs_biojava.txt"

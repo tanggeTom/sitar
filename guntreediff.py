@@ -6,7 +6,7 @@ import git
 from shutil import copyfile
 import json
 
-project_name = 'gson'  # 只需要修改此处
+project_name = 'jruby'  # 只需要修改此处
 repo_name = 'D:\\BaiduNetdiskDownload\\commit\\' + project_name
 repo = git.Repo(repo_name)
 commits = repo.iter_commits('master')
@@ -20,9 +20,9 @@ save_path = "D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project
 
 
 # 创建对应的文件夹
-os.makedirs('{0}/old'.format(save_path))
-os.makedirs('{0}/new'.format(save_path))
-os.makedirs('{0}/res'.format(save_path))
+# os.makedirs('{0}/old'.format(save_path))
+# os.makedirs('{0}/new'.format(save_path))
+# os.makedirs('{0}/res'.format(save_path))
 
 # os.makedirs('{0}/diff'.format(save_path))
 # new_path = '{0}_git'.format(save_path)

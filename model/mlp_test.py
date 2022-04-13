@@ -34,11 +34,25 @@ def read_json(filename):
         del_packageid_line = json_data['del_packageid_line']
         del_parameter_line = json_data['del_parameter_line']
         del_return_line = json_data['del_return_line']
-        # print(type(del_return_line))
+        insert_num = 0 if not json_data.get('insert') else json_data["insert"]
+        update_num = 0 if not json_data.get('update') else json_data["update"]
+        move_num = 0 if not json_data.get('move') else json_data["move"]
+        delete_num = 0 if not json_data.get('delete') else json_data["delete"]
+        clusters_num = 0
+        if insert_num != 0:
+            clusters_num += 1
+        if update_num != 0:
+            clusters_num += 1
+        if move_num != 0:
+            clusters_num += 1
+        if delete_num != 0:
+            clusters_num += 1
+        actions_num = delete_num + move_num + update_num + insert_num
         feature = [add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
                    add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
                    del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
-                   del_packageid_line, del_parameter_line, del_return_line]
+                   del_packageid_line, del_parameter_line, del_return_line, insert_num, update_num, move_num,
+                   delete_num, clusters_num, actions_num]
         # features_np = np.asarray(features, dtype=float)
         # print(json_data['prod_typ'])
         features.append(feature)
@@ -69,7 +83,11 @@ print('negative', negative_num)
 X_train, X_test, y_train, y_test =train_test_split(features, target, test_size = 0.1,random_state=1)
 print(len(X_train))
 print(len(X_test))
-
+rgs = MLPClassifier()  ##随机森林模型
+rgs = rgs.fit(X_train, y_train)
+predict = rgs.predict_proba(X_test)
+print(predict)
+predict = predict[:, 1]
 for num in range(0, 50):
     threshold = num / 49
     print('======', threshold)
@@ -78,11 +96,7 @@ for num in range(0, 50):
     FP = 0
     FN = 0
     TN = 0
-    rgs = MLPClassifier()  ##随机森林模型
-    rgs = rgs.fit(X_train, y_train)
-    predict = rgs.predict_proba(X_test)
-    print(predict)
-    predict = predict[:, 1]
+
     print(predict)
     for i in range(len(predict)):
         if predict[i] >= threshold:
