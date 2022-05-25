@@ -191,7 +191,12 @@ for i in range(24):
     predict = rfc.predict(test[:, i:])
     res = classification_report(test_target, predict, output_dict=True)
     post_accs.append(res['accuracy'])
+# 用来正常显示中文标签
+plt.rcParams['font.sans-serif'] = ['宋体']
+# 用来正常显示负号
+plt.rcParams['axes.unicode_minus'] = False
 plt.plot(features_name, pre_accs)
 plt.plot(features_name, post_accs)
-plt.legend(['prefix',"postfix"])
+plt.legend(['前置策略',"后置策略"])
+plt.savefig('pre_post.jpg',dpi=1000,bbox_inches = 'tight')
 plt.show()

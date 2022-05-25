@@ -8,43 +8,75 @@ import matplotlib.pyplot as plt
 delete = 0
 create = 0
 edit = 0
+CC = 0
+CD = 0
+CE = 0
+DC = 0
+DD = 0
+DE = 0
+# CE = 0
+EC = 0
+ED = 0
+EE = 0
 
 
 # 读取json，并获取特征
 def read_json(filename):
-    global delete, create, edit
-    # print(filename)
+    global CC, CD, CE, DC, DD, DE, CE, EC, ED, EE
+    # print(filename)CC，CD，CE，DC，DD，DE，CE，EC，ED，ED
     with open(filename, 'r', encoding='utf8') as fp:
         json_data = json.load(fp)
         prod_typ = json_data["prod_typ"]
-        print(json_data.get('insert'))
-        del_annotation_line = json_data['del_annotation_line']
-        del_call_line = json_data['del_call_line']
-        del_classname_line = json_data['del_classname_line']
-        del_condition_line = json_data['del_condition_line']
-        del_field_line = json_data['del_field_line']
-        del_import_line = json_data['del_import_line']
-        del_packageid_line = json_data['del_packageid_line']
-        del_parameter_line = json_data['del_parameter_line']
-        del_return_line = json_data['del_return_line']
-        if not json_data.get('insert'):
-            print("noinsert")
-        # if not json_data.get('insert') and (prod_typ =="EDIT") :
-        # print(filename)
+        test_typ = json_data["test_typ"]
         if prod_typ == "DELETE":
-            delete += 1
+            if test_typ == "DELETE":
+                DD += 1
+            elif test_typ == "CREATE":
+                DC += 1
+            elif test_typ == "EDIT":
+                DE += 1
         elif prod_typ == "CREATE":
-            print('create', filename)
-            create += 1
+            if test_typ == "DELETE":
+                CD += 1
+            elif test_typ == "CREATE":
+                CC += 1
+            elif test_typ == "EDIT":
+                CE += 1
         elif prod_typ == "EDIT":
-            if del_annotation_line == 0 and del_return_line == 0 and del_parameter_line == 0 and del_packageid_line == 0 and del_import_line == 0 and del_field_line == 0 and del_condition_line == 0 and del_call_line == 0 and del_classname_line == 0:
-                print('edit',filename)
-            edit += 1
+            if test_typ == "DELETE":
+                ED += 1
+            elif test_typ == "CREATE":
+                EC += 1
+            elif test_typ == "EDIT":
+                EE += 1
+    # print(json_data.get('insert'))
+    # del_annotation_line = json_data['del_annotation_line']
+    # del_call_line = json_data['del_call_line']
+    # del_classname_line = json_data['del_classname_line']
+    # del_condition_line = json_data['del_condition_line']
+    # del_field_line = json_data['del_field_line']
+    # del_import_line = json_data['del_import_line']
+    # del_packageid_line = json_data['del_packageid_line']
+    # del_parameter_line = json_data['del_parameter_line']
+    # del_return_line = json_data['del_return_line']
+    # if not json_data.get('insert'):
+    #     print("noinsert")
+    # if not json_data.get('insert') and (prod_typ =="EDIT") :
+    # print(filename)
+    # if prod_typ == "DELETE":
+    #     delete += 1
+    # elif prod_typ == "CREATE":
+    #     print('create', filename)
+    #     create += 1
+    # elif prod_typ == "EDIT":
+    #     if del_annotation_line == 0 and del_return_line == 0 and del_parameter_line == 0 and del_packageid_line == 0 and del_import_line == 0 and del_field_line == 0 and del_condition_line == 0 and del_call_line == 0 and del_classname_line == 0:
+    #         print('edit',filename)
+    #     edit += 1
 
 
 def write_json(filename: str, project_name):
     print(filename)
-    with open(filename, "r",encoding="utf8") as fp:
+    with open(filename, "r", encoding="utf8") as fp:
         content = fp.read()
         insert_num = content.count("insert")
         update_num = content.count("update")
@@ -67,14 +99,22 @@ def write_json(filename: str, project_name):
             fp.seek(0)
             fp.write(json.dumps(json_data))
 
-
-project_name = "biojava"
+projects = ['activemq', 'commons-math','zeppelin','flink','cloudstack', 'logging-log4j2','storm','usergrid','james-project','geode']
+project_name = "zeppelin"
 path = "D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project_name + "\\res"
-json_path = "experiment_data/" + project_name
-for file in os.listdir(path):
-    # read_json(json_path + '/' + file)
-    write_json(path + '/' + file,project_name)
+for i in projects:
+    print(i)
+    json_path = "experiment_data/" + i
+    for file in os.listdir(json_path):
+        read_json(json_path + '/' + file)
+        # write_json(path + '/' + file,project_name)
 
-# print('create', create)
-# print('delete', delete)
-# print('edit', edit)
+print('CC', CC)
+print('CD', CD)
+print('CE', CE)
+print('DC', DC)
+print('DD', DD)
+print('DE', DE)
+print('EC', EC)
+print('ED', ED)
+print('EE', EE)

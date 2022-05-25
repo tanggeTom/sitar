@@ -188,7 +188,7 @@ def transfer_path(path: str):
 # git logs --stat=500 --pretty=format:"%H*%cd*%ar" --date-order > logs_dubbo.txt
 # dir_set = set()
 # dir_list = ['dubbo-cluster','dubbo-common','dubbo-remoting','dubbo-rpc','dubbo-registry','dubbo-cluster','dubbo-compatible','dubbo-config','dubbo-configcenter','dubbo-container-spring','']
-name = "logs_biojava.txt"
+name = "logs/logs_zeppelin.txt"
 list_dir = (find_test_dir(name))
 list_test_file = find_test_file(name)
 df = pd.DataFrame(list_test_file)

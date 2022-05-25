@@ -78,7 +78,7 @@ print('positive', positive_num)
 print('negative', negative_num)
 # 测试集和训练集 0.1-0.9
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.1, random_state=1)
-lr = LogisticRegression(max_iter=1000,random_state=1)  ##逻辑回归
+lr = LogisticRegression(random_state=1)  ##逻辑回归
 lr = lr.fit(X_train, y_train)
 predict = lr.predict_proba(X_test)
 print(predict)
