@@ -84,6 +84,7 @@ def write_json(filename: str, project_name):
         delete_num = content.count("delete")
         lastname = os.path.split(filename)[1]
         print('last', lastname)
+        # 读取gumtree文件
         with open('experiment_data//' + project_name + '//' + lastname.split(".txt")[0] + '.json', "r+",
                   encoding='utf8') as fp:
             print(fp.name)
@@ -92,6 +93,8 @@ def write_json(filename: str, project_name):
             json_data['update'] = update_num
             json_data['move'] = move_num
             json_data['delete'] = delete_num
+            json_data['pre_cyclomatic_complexity'] = 0
+            json_data['last_cyclomatic_complexity'] =0
             if json_data['prod_typ'] == "CREATE" or json_data['prod_typ'] == "DELETE":
                 print('create_delete', fp.name)
             fp.seek(0)
@@ -99,22 +102,63 @@ def write_json(filename: str, project_name):
             fp.seek(0)
             fp.write(json.dumps(json_data))
 
-projects = ['activemq', 'commons-math','zeppelin','flink','cloudstack', 'logging-log4j2','storm','usergrid','james-project','geode']
-project_name = "zeppelin"
-path = "D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project_name + "\\res"
-for i in projects:
-    print(i)
-    json_path = "experiment_data/" + i
-    for file in os.listdir(json_path):
-        read_json(json_path + '/' + file)
-        # write_json(path + '/' + file,project_name)
 
-print('CC', CC)
-print('CD', CD)
-print('CE', CE)
-print('DC', DC)
-print('DD', DD)
-print('DE', DE)
-print('EC', EC)
-print('ED', ED)
-print('EE', EE)
+def writeComplexity(filename: str, project_name, label: str):
+    print(filename)
+    with open(filename, "r", encoding="utf8") as fp:
+        content = fp.read()
+        case_num = content.count("case ")
+        for_num = content.count("for (")
+        if_num = content.count("if (")
+        elseif_num = content.count("else if (")
+        ternary_num = content.count(" ? ")
+        and_num = content.count(" && ")
+        or_num = content.count(" || ")
+        print("case{} for{} if{} elseif{} ternary{} and{} or{}".format( case_num, for_num, if_num-elseif_num, elseif_num, ternary_num,
+              and_num, or_num))
+        total_num = case_num + for_num + if_num + ternary_num + and_num + or_num + 1
+        lastname = os.path.split(filename)[1]
+        print('last', lastname)
+        # 读取gumtree文件
+        with open('experiment_data//' + project_name + '//' + lastname.split(".java")[0] + '.json', "r+",
+                  encoding='utf8') as fp:
+            print(fp.name)
+            json_data = json.load(fp)
+            json_data[label] = total_num
+            fp.seek(0)
+            fp.truncate()
+            fp.seek(0)
+            fp.write(json.dumps(json_data))
+
+
+projects = ['activemq', 'commons-math', 'zeppelin', 'flink', 'cloudstack', 'logging-log4j2', 'storm', 'usergrid',
+            'james-project', 'geode','biojava','jruby','pmd','jsoup']
+project_name = "geode"
+for i in projects:
+    path = "D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + i + "\\res"
+#     print(i)
+#     # json_path = "experiment_data/" + i
+    for file in os.listdir(path):
+        # read_json(json_path + '/' + file)
+        write_json(path + '/' + file, i)
+
+# for project in projects:
+#     java_path = "D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project
+#     already_new = os.listdir("D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project + "\\new")
+#     already_old = os.listdir("D:\\google download\\gumtree-3.0.0\\gumtree-3.0.0\\bin\\" + project + "\\old")
+#     for i in os.listdir("experiment_data/"+project):
+#         print(i)
+#         filename = i.split('.json')[0] +".java"
+#         if filename in already_old:
+#             writeComplexity(java_path+"\\old\\"+filename,project,"pre_cyclomatic_complexity")
+#         if filename in already_new:
+#             writeComplexity(java_path+"\\new\\"+filename,project,"last_cyclomatic_complexity")
+# print('CC', CC)
+# print('CD', CD)
+# print('CE', CE)
+# print('DC', DC)
+# print('DD', DD)
+# print('DE', DE)
+# print('EC', EC)
+# print('ED', ED)
+# print('EE', EE)

@@ -6,7 +6,7 @@ import git
 from shutil import copyfile
 import json
 
-project_name = 'jruby'  # 只需要修改此处
+project_name = 'biojava'  # 只需要修改此处
 repo_name = 'D:\\BaiduNetdiskDownload\\commit\\' + project_name
 repo = git.Repo(repo_name)
 commits = repo.iter_commits('master')
@@ -43,8 +43,16 @@ def read_json(project_list, filename):
             json_data = json.load(fp)
             prod_path = json_data["prod_path"]
             prod_sha1 = json_data["prod_sha1"]
+
             for i in range(num):  # 遍历所有commit
                 if i == num - 1:  # 第一个commit，肯定没有old文件
+                    # new_commit = commits_list[i]
+                    # repo.index.reset(commit=new_commit.hexsha, working_tree=True)
+                    try:
+                        copyfile('{0}/{1}'.format(repo_name, prod_path),
+                                 save_path + '\\' + 'new\\' + per_json + ".java")#只保存new文件
+                    except:
+                        print("文件不存在")
                     break
                 if str(commits_list[i]) == prod_sha1:
                     find_new, find_old = compare_file(i, prod_path, per_json)

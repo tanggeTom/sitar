@@ -44,6 +44,12 @@ def read_json(filename):
         del_parameter_line = json_data['del_parameter_line']
         del_return_line = json_data['del_return_line']
         prod_typ = json_data['prod_typ']
+        print(filename)
+        pre_cyclomatic_complexity = 0 if not json_data.get('pre_cyclomatic_complexity') else json_data["pre_cyclomatic_complexity"]
+        last_cyclomatic_complexity = 0 if not json_data.get('last_cyclomatic_complexity') else json_data["last_cyclomatic_complexity"]
+        pre_cyclomatic_complexity = str(pre_cyclomatic_complexity).replace(",","") # 存在1,234过千的数字
+        last_cyclomatic_complexity = str(last_cyclomatic_complexity).replace(",","")
+        cyclomatic_complexity_diff = int(last_cyclomatic_complexity)-int(pre_cyclomatic_complexity)
         json_data.get('insert')
         # if not json_data.get('insert'):
         #     print("noinsert")
@@ -51,6 +57,7 @@ def read_json(filename):
         update_num = 0 if not json_data.get('update') else json_data["update"]
         move_num = 0 if not json_data.get('move') else json_data["move"]
         delete_num = 0 if not json_data.get('delete') else json_data["delete"]
+
         clusters_num = 0
         if insert_num != 0:
             clusters_num += 1
@@ -66,8 +73,11 @@ def read_json(filename):
         # del_total = del_call_line + del_annotation_line + del_classname_line + del_condition_line + del_field_line + del_import_line + del_packageid_line + del_parameter_line + del_return_line
         # create_delete =
         # print(type(del_return_line))
-        feature = [ insert_num, update_num, move_num,
-                   delete_num, clusters_num, actions_num]
+        feature = [ add_annotation_line, add_call_line, add_classname_line, add_condition_line, add_field_line,
+                   add_import_line, add_packageid_line, add_parameter_line, add_return_line, del_annotation_line,
+                   del_call_line, del_classname_line, del_condition_line, del_field_line, del_import_line,
+                   del_packageid_line, del_parameter_line, del_return_line,insert_num, update_num, move_num,
+                   delete_num, clusters_num, actions_num,pre_cyclomatic_complexity,last_cyclomatic_complexity,cyclomatic_complexity_diff]
 
         features.append(feature)
         if json_data['sample_type'] == "POSITIVE":
@@ -94,7 +104,7 @@ feature_name = ["add_annotation_line", "add_call_line", "add_classname_line", "a
                 "add_import_line", "add_packageid_line", "add_parameter_line", "add_return_line", "del_annotation_line",
                 "del_call_line", "del_classname_line", "del_condition_line", "del_field_line", "del_import_line",
                 "del_packageid_line", "del_parameter_line", "del_return_line", "insert_num", "update_num", "move_num",
-                "delete_num", "clusters_num", "actions_num"]
+                "delete_num", "clusters_num", "actions_num","pre_cyclomatic_complexity","last_cyclomatic_complexity","cyclomatic_complexity_diff"]
 # projects = ['activemq', 'cloudstack', 'commons-math', 'flink', 'geode', 'james-project', 'logging-log4j2', 'storm',
 #        'usergrid', 'zeppelin',
 #        'jpacman-framework', 'gson', 'pmd', 'biojava', 'izpack', 'joda-time', 'dnsjava', 'jackson-core',

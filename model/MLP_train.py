@@ -1,6 +1,8 @@
-#-*-coding:gb2312-*-
+# -*-coding:gb2312-*-
 import json
 import os
+
+import torch
 from numpy import *
 import numpy as np
 from sklearn.linear_model import LogisticRegression
@@ -72,6 +74,12 @@ for dir in os.listdir('../experiment_data'):
     for file in os.listdir('../experiment_data/' + dir):
         read_json('../experiment_data/' + dir + '/' + file)
 X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=0.1, random_state=1)
+X_train = torch.tensor(X_train, dtype=torch.float)
+y_train = torch.tensor(y_train, dtype=torch.long)
+X_test = torch.tensor(X_test, dtype=torch.float)
+y_test = torch.tensor(y_test, dtype=torch.long)
+test_data_size = len(y_test)
+train_data_size = len(y_train)
 train_dataset = Data.TensorDataset(X_train, y_train)
 test_dataset = Data.TensorDataset(X_test, y_test)
 train_dataloader = Data.DataLoader(
@@ -85,22 +93,41 @@ test_dataloader = Data.DataLoader(
 # 设置训练网络的一些参数
 total_train_step = 0  # 记录训练的次数
 total_test_step = 0  # 记录测试的次数
-epoch = 10  # 训练的轮数
+epoch = 1000  # 训练的轮数
+# 创建网络模型
+mlp = MLP()
+total = sum([param.nelement() for param in mlp.parameters()])
+
+print("Number of parameter: %.2fM" % (total / 1e6))
+
+# for name, param in mlp.named_parameters():
+#     print(name, '      ', param)
+
 # 创建损失函数
 loss_fn = nn.CrossEntropyLoss()
 # 优化器
-learning_rate = 1e-2  # 1e-2 = 1 * (10)^(-2) = 1 / 100 = 0.01
-optimizer = torch.optim.SGD(mlp.parameters(), lr=learning_rate)
+learning_rate = 1e-1  # 1e-2 = 1 * (10)^(-2) = 1 / 100 = 0.01
+optimizer = torch.optim.Adam(mlp.parameters(), lr=0.01)
 
 for i in range(epoch):
     print("------第 {} 轮训练开始------".format(i + 1))
-
+    train_total_accuracy = 0  # 准确率
     # 训练步骤开始
+    mlp.train()
     for data in train_dataloader:
         imgs, targets = data
-        outputs = mlp(imgs)  # 将训练的数据放入
-        loss = loss_fn(outputs, targets)  # 得到损失值
 
+        # print(imgs.shape)
+        # print(imgs)
+        #
+        # print(imgs.shape)
+        # print(imgs)
+
+        outputs = mlp(imgs)  # 将训练的数据放入
+        # print(targets)
+        # print(outputs)
+        loss = loss_fn(outputs, targets)  # 得到损失值
+        #
         optimizer.zero_grad()  # 优化过程中首先要使用优化器进行梯度清零
         loss.backward()  # 调用得到的损失，利用反向传播，得到每一个参数节点的梯度
         optimizer.step()  # 对参数进行优化
@@ -109,22 +136,33 @@ for i in range(epoch):
         # 只有训练步骤是100 倍数的时候才打印数据，可以减少一些没有用的数据，方便我们找到其他数据
         if total_train_step % 100 == 0:
             print("训练次数: {}, Loss: {}".format(total_train_step, loss))
-
+        accuracy = (outputs.argmax(1) == targets).sum()  # 分类正确个数
+        train_total_accuracy += accuracy  # 相加
+    print("整体测试集上的正确率: {}".format(train_total_accuracy / train_data_size))
     # 如何知道模型有没有训练好，即有咩有达到自己想要的需求
     # 我们可以在每次训练完一轮后，进行一次测试，在测试数据集上跑一遍，以测试数据集上的损失或正确率评估我们的模型有没有训练好
-
+    for p in optimizer.param_groups:
+        print("epoch from {} , lr={}".format(epoch,
+                                                  optimizer.state_dict()['param_groups'][0]['lr']))
+        p['lr'] *= 0.99
     # 顾名思义，下面的代码没有梯度，即我们不会进行调优
     total_test_loss = 0
+    total_accuracy = 0  # 准确率
+    mlp.eval()
     with torch.no_grad():
         for data in test_dataloader:
             imgs, targets = data
             outputs = mlp(imgs)
             loss = loss_fn(outputs, targets)  # 这里的 loss 只是一部分数据(data) 在网络模型上的损失
             total_test_loss = total_test_loss + loss  # 整个测试集的loss
-
+            accuracy = (outputs.argmax(1) == targets).sum()  # 分类正确个数
+            total_accuracy += accuracy  # 相加
     print("整体测试集上的loss: {}".format(total_test_loss))
+    print("整体测试集上的正确率: {}".format(total_accuracy / test_data_size))
     # writer.add_scalar("test_loss", total_test_loss)
     total_test_loss += 1  # 测试完了之后要 +1
 
-    # torch.save(model, "model_{}.pth".format(i))
+
+torch.save(mlp, "model_{}.pth".format(100))
     # print("模型已保存")
+

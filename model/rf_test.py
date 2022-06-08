@@ -96,7 +96,7 @@ for num in range(0, 50):
     rgs = rgs.fit(x_train,y_train)
     predict = rgs.predict(x_test)
     for i in range(len(predict)):
-        if predict[i] >= threshold:
+        if predict[i] >= 0.5:
             if y_test[i] == 1:
                 TP += 1
             else:
@@ -116,6 +116,7 @@ for num in range(0, 50):
     recalls.append(TP / (TP + FN))
     print('max', max(predict))
     print('min', min(predict))
+    print("acc",(TP+TN)/(TP + FN+TN+FP))
 print(recalls)
 print(pres)
 plt.plot(recalls, pres)
